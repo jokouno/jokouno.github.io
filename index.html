@@ -370,6 +370,12 @@
                   Your browser does not support the video tag.
                 </video>
               </div>
+              <div class="carousel">
+                <a class="carousel-item" href="#one!"><video controls><source src="/assets/videos/SILC_Chat1.mp4" type="video/mp4"></video></a>
+                <a class="carousel-item" href="#two!"><video controls><source src="/assets/videos/SILC_Chat2.mp4" type="video/mp4"></video></a>
+                <a class="carousel-item" href="#three!"><video controls><source src="/assets/videos/SILC_Chat3.mp4" type="video/mp4"></video></a>
+                <a class="carousel-item" href="#four!"><video controls><source src="/assets/videos/SILC_Chat4.mp4" type="video/mp4"></video></a>
+              </div>
               <div class="card-content">
                 <span class="card-title activator teal-text hoverline">LLM Copilot for SIEMENS<i class="mdi-navigation-more-vert right"></i></span>
                 <p>SILC the LLM Copilot developed for Siemens at the university, to process requests in the field of logistics.</p>
@@ -629,6 +635,12 @@
         closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
       })
     })
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.carousel');
+      var instances = M.Carousel.init(elems, {fullWidth: true, indicators: true});
+    });
   </script>
 
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2cbaf4a1916c4ba68ae8826acb8cd6fa"}'></script><!-- End Cloudflare Web Analytics -->
