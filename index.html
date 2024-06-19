@@ -653,12 +653,14 @@
     document.addEventListener('DOMContentLoaded', function() {
       var elems = document.querySelectorAll('.carousel.carousel-slider');
       var instances = M.Carousel.init(elems, {
-        fullWidth: true,  // Nutzt die volle Breite für das Karussell
-        indicators: true, // Zeigt Indikatoren unten am Karussell
-        noWrap: false,    // Erlaubt endloses Scrollen
-        duration: 200     // Geschwindigkeit der Animation
+          fullWidth: true,
+          indicators: true,
+          noWrap: false,
+          duration: 200,
+          // Navigationsoptionen aktivieren
+          prevNextButtons: true
       });
-    });
+  });
   </script>
 
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2cbaf4a1916c4ba68ae8826acb8cd6fa"}'></script><!-- End Cloudflare Web Analytics -->
