@@ -713,11 +713,11 @@ small {
   align-items: center;
 }
 
-.carousel-slider .carousel-control {
+.carousel .carousel-prev, .carousel .carousel-next {
   visibility: visible;
-  color: #fff; /* Farbe der Pfeile, ändere sie nach Bedarf */
+  color: #fff; /* Farbe der Pfeile */
 }
 
-.carousel-slider .carousel-control:hover {
+.carousel .carousel-prev:hover, .carousel .carousel-next:hover {
   background-color: rgba(0,0,0,0.3); /* Hintergrundfarbe beim Hover */
 }
