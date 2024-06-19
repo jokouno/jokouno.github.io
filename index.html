@@ -20,7 +20,7 @@
   <!-- End Google Tag Manager -->
 
   <!-- Materialize - Compiled and minified CSS-->
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- Font Awesome Icon - CSS-->
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
   <!-- Custom Styles-->
@@ -653,14 +653,10 @@
     document.addEventListener('DOMContentLoaded', function() {
       var elems = document.querySelectorAll('.carousel.carousel-slider');
       var instances = M.Carousel.init(elems, {
-          fullWidth: true,
-          indicators: true,
-          noWrap: false,
-          duration: 200,
-          // Navigationsoptionen aktivieren
-          prevNextButtons: true
+        fullWidth: true,
+        indicators: true
       });
-  });
+    });
   </script>
 
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2cbaf4a1916c4ba68ae8826acb8cd6fa"}'></script><!-- End Cloudflare Web Analytics -->
