@@ -704,3 +704,20 @@ small {
   height: auto;
   display: block; /* Stellt sicher, dass das Bild ordnungsgemäß im Blockformat angezeigt wird */
 }
+
+.carousel .carousel-item {
+  width: 100%; /* Setze die Breite jedes Carousel-Elements */
+  height: 100%; /* Optionale Anpassung der Höhe */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-slider .carousel-control {
+  visibility: visible;
+  color: #fff; /* Farbe der Pfeile, ändere sie nach Bedarf */
+}
+
+.carousel-slider .carousel-control:hover {
+  background-color: rgba(0,0,0,0.3); /* Hintergrundfarbe beim Hover */
+}
