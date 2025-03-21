@@ -747,28 +747,32 @@ small {
   margin-bottom: 60px;
 }
 
+/* Standard: Stacked (z.B. für Handy) */
 .education-card {
   display: flex;
-  padding: 0 !important;
-  margin-bottom: 60px;
+  flex-direction: column; /* untereinander */
+}
+
+/* Ab Medium oder Large dann nebeneinander */
+@media (min-width: 992px) {
+  .education-card {
+    flex-direction: row; /* nebeneinander */
+  }
 }
 
 .education-card-content {
-  width: 60%; /* Breite der linken Kachel */
-  border-right: 2px solid #e0e0e0; /* Grauer vertikaler Strich rechts */
+  flex: 1; /* Damit die Breite automatisch verteilt wird */
+  border-right: 2px solid #e0e0e0;
   padding: 20px !important;
   box-sizing: border-box;
 }
 
 .education-text-content {
-  width: 40%; /* Breite für Fließtext rechts */
+  flex: 1; /* Ebenso flexibel */
   background-color: #fafafa;
   padding: 20px !important;
   box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  font-size: 16px;
-  line-height: 1.6;
 }
+
 
 
