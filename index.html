@@ -897,6 +897,16 @@ window.addEventListener("load", function(){
       });
     });
   </script>
+	
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+	  var elems = document.querySelectorAll('.carousel.carousel-slider');
+	  var instances = M.Carousel.init(elems, {
+	    fullWidth: true,
+	    indicators: true
+	  });
+	});
+</script>
 
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2cbaf4a1916c4ba68ae8826acb8cd6fa"}'></script><!-- End Cloudflare Web Analytics -->
           
