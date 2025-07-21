@@ -1,47 +1,56 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
-  <script>
-    window.addEventListener("load", function(){
-      window.cookieconsent.initialise({
-        "palette": {
-          "popup": { "background": "#000" },
-          "button": { "background": "#f1d600" }
-        },
-        "theme": "classic",
-        "position": "bottom",
-        "content": {
-          "message": "Diese Website verwendet Cookies, um sicherzustellen, dass Sie die bestmögliche Erfahrung auf unserer Website haben.",
-          "dismiss": "Akzeptieren",
-          "link": "Mehr erfahren",
-          "href": "/datenschutz.html"
-        }
-      });
-    });
-  </script>
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
 
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E2YLRZH7DY"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-E2YLRZH7DY');
-  </script>
+<script>
+window.addEventListener("load", function(){
+  window.cookieconsent.initialise({
+    "palette": {
+      "popup": {
+        "background": "#000"
+      },
+      "button": {
+        "background": "#f1d600"
+      }
+    },
+    "theme": "classic",
+    "position": "bottom",
+    "content": {
+      "message": "Diese Website verwendet Cookies, um sicherzustellen, dass Sie die bestmögliche Erfahrung auf unserer Website haben.",
+      "dismiss": "Akzeptieren",
+      "link": "Mehr erfahren",
+      "href": "/datenschutz.html"
+    }
+  })
+});
+</script>
 
-  <!-- Materialize CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E2YLRZH7DY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-E2YLRZH7DY');
+</script>
+
+  <!-- End Google Tag Manager -->
+
+  <!-- Materialize - Compiled and minified CSS-->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
   <!-- Font Awesome Icon - CSS-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
   <!-- Custom Styles-->
   <link rel="stylesheet" href="/assets/css/style.css" />
-
   <title>Johannes Koller | Software Developer</title>
 
   <!-- Open Graph-->
@@ -61,8 +70,6 @@
   <meta name="twitter:url" content="https://twitter.com/1joko_cs" />
   <meta name="author" content="Johannes Koller" />
   <meta name="description" content="Software Developer with a passion for backend development and VR." />
-
-  <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicon/apple-icon-57x57.png" />
   <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicon/apple-icon-60x60.png" />
   <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-icon-72x72.png" />
@@ -81,7 +88,6 @@
   <meta name="msapplication-TileImage" content="/assets/img/favicon/ms-icon-144x144.png" />
   <meta name="theme-color" content="#ffffff" />
   <meta name="robots" content="index, follow" />
-</head>
 
 <body>
 
@@ -865,32 +871,35 @@
     });
   </script>
 
-  <!-- jQuery (optional, für Materialize nicht mehr zwingend notwendig) -->
+  <!-- jQuery-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <!-- Materialize JS -->
+          
+  <!-- Materialize - Compiled and minified JavaScript-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      // Scrollspy
-      var elemsScroll = document.querySelectorAll('.scrollspy');
-      M.ScrollSpy.init(elemsScroll);
-
-      // Sidenav
-      var elemsSidenav = document.querySelectorAll('.sidenav');
-      M.Sidenav.init(elemsSidenav, {
-        edge: 'left',
-        closeOnClick: true
-      });
-
-      // Carousel
-      var elemsCarousel = document.querySelectorAll('.carousel.carousel-slider');
-      M.Carousel.init(elemsCarousel, {
+    // Materialize - Initializers
+    $(document).ready(function () {
+      $(".scrollspy").scrollSpy()
+      // Initialize collapse button
+      $(".button-collapse").sideNav({
+        menuWidth: 190, // Default is 240
+        edge: "left", // Choose the horizontal origin
+        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      })
+    })
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.carousel.carousel-slider');
+      var instances = M.Carousel.init(elems, {
         fullWidth: true,
         indicators: true
       });
     });
   </script>
-  <!-- Cloudflare Web Analytics -->
-  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "2cbaf4a1916c4ba68ae8826acb8cd6fa"}'></script>
+
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2cbaf4a1916c4ba68ae8826acb8cd6fa"}'></script><!-- End Cloudflare Web Analytics -->
+          
 </body>
+
 </html>
