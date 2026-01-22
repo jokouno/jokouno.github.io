@@ -1,905 +1,2963 @@
-<!-- <!DOCTYPE html> -->
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#070A12" />
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
-<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+  <title>Johannes Koller | Software Engineer</title>
 
-<script>
-window.addEventListener("load", function(){
-  window.cookieconsent.initialise({
-    "palette": {
-      "popup": {
-        "background": "#000"
-      },
-      "button": {
-        "background": "#f1d600"
-      }
-    },
-    "theme": "classic",
-    "position": "bottom",
-    "content": {
-      "message": "Diese Website verwendet Cookies, um sicherzustellen, dass Sie die bestmögliche Erfahrung auf unserer Website haben.",
-      "dismiss": "Akzeptieren",
-      "link": "Mehr erfahren",
-      "href": "/datenschutz.html"
-    }
-  })
-});
-</script>
+  <meta name="title" content="Johannes Koller | Software Engineer · AI · Portfolio" />
+  <meta name="description" content="Software Engineer focused on production-grade AI systems and immersive VR. Building LLM-driven, multi-agent pipelines for automated 3D scene generation, Unity integration and evaluation at scale." />
+  <meta name="keywords" content="Johannes Koller, AI, VR, Unity, LLM, scene generation, multi-agent, LangChain, LangGraph, C#, .NET, software engineering, ML engineering, portfolio" />
+  <meta name="author" content="Johannes Koller" />
 
-  
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-E2YLRZH7DY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-E2YLRZH7DY');
-</script>
-
-  <!-- End Google Tag Manager -->
-
-  <!-- Materialize - Compiled and minified CSS-->
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
-  <!-- Font Awesome Icon - CSS-->
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
-  <!-- Custom Styles-->
-  <link rel="stylesheet" href="/assets/css/style.css" />
-  <title>Johannes Koller | Software Developer</title>
-
-  <!-- Open Graph-->
-  <meta property="og:locale" content="en_US" />
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Johannes Koller | Software Developer" />
-  <meta property="og:description" content="Software Developer" />
-  <meta property="og:url" content="https://cv.johanneskoller.de/" />
-  <meta property="og:site_name" content="Johannes Koller | Software Developer" />
-  <meta property="article:publisher" content="https://github.com/jokouno" />
+  <meta property="og:url" content="/" />
+  <meta property="og:title" content="Johannes Koller | Software Engineer · AI · Portfolio" />
+  <meta property="og:description" content="Software Engineer focused on production-grade AI systems and immersive VR." />
+  <meta property="og:image" content="/images/og-image.jpg" />
 
   <!-- Twitter -->
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@1joko_cs" />
-  <meta name="twitter:title" content="Coder | Technofreak | Explorer | Minimalist | Humane" />
-  <meta name="twitter:description" content="Software Developer" />
-  <meta name="twitter:url" content="https://twitter.com/1joko_cs" />
-  <meta name="author" content="Johannes Koller" />
-  <meta name="description" content="Software Developer with a passion for backend development and VR." />
-  <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicon/apple-icon-57x57.png" />
-  <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicon/apple-icon-60x60.png" />
-  <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-icon-72x72.png" />
-  <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon/apple-icon-76x76.png" />
-  <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-icon-114x114.png" />
-  <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicon/apple-icon-120x120.png" />
-  <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-icon-144x144.png" />
-  <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicon/apple-icon-152x152.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-icon-180x180.png" />
-  <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/android-icon-192x192.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon/favicon-96x96.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="/assets/img/favicon/manifest.json" />
-  <meta name="msapplication-TileColor" content="#ffffff" />
-  <meta name="msapplication-TileImage" content="/assets/img/favicon/ms-icon-144x144.png" />
-  <meta name="theme-color" content="#ffffff" />
-  <meta name="robots" content="index, follow" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="/" />
+  <meta property="twitter:title" content="Johannes Koller | Software Engineer · AI · Portfolio" />
+  <meta property="twitter:description" content="Software Engineer focused on production-grade AI systems and immersive VR." />
+  <meta property="twitter:image" content="/images/og-image.jpg" />
+
+  <link rel="canonical" href="/" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com/" />
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "headline": "Johannes Koller | Software Engineer",
+    "description": "Software Engineer focused on production-grade AI systems and immersive VR. Building LLM-driven, multi-agent pipelines for automated 3D scene generation, Unity integration and evaluation at scale.",
+    "dateModified": "2026-01-11",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "/" },
+    "author": {
+      "@type": "Person",
+      "name": "Johannes Koller",
+      "jobTitle": "Software Engineer",
+      "url": "/",
+      "sameAs": [
+        "https://github.com/jokouno",
+        "https://www.linkedin.com/in/johannes-koller-39b015217/",
+        "https://orcid.org/0009-0002-5959-8126"
+      ],
+      "knowsAbout": [
+        "Software Engineering",
+        "AI Engineering",
+        "VR / 3D Scene Generation",
+        "Unity",
+        "LLM Pipelines",
+        "Multi-Agent Systems",
+        "Evaluation Metrics",
+        ".NET / C#",
+        "Python"
+      ]
+    }
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg0:#070A12;
+      --bg1:#0B0F19;
+      --fg:#E9EBEF;
+      --muted:#A3A9B6;
+      --muted2:#7B8394;
+
+      --accent:#FDEE21;
+      --accent2:#9DFFB7;
+      --danger:#FF4D4D;
+
+      --glass: rgba(255,255,255,.06);
+      --glass2: rgba(255,255,255,.04);
+      --border: rgba(255,255,255,.12);
+      --border2: rgba(255,255,255,.08);
+
+      --shadow: 0 20px 80px rgba(0,0,0,.55);
+      --shadow2: 0 10px 40px rgba(0,0,0,.55);
+
+      --radius: 18px;
+      --radius2: 22px;
+
+      --max: 1140px;
+
+      --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --sans: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+
+      --ease: cubic-bezier(.2,.8,.2,1);
+
+      --topbar-h: 64px;
+
+      /* spacing scale */
+      --s1: 8px;
+      --s2: 12px;
+      --s3: 16px;
+      --s4: 24px;
+      --s5: 32px;
+      --s6: 48px;
+      --s7: 72px;
+      --s8: 96px;
+
+      color-scheme: dark;
+    }
+
+    *{ box-sizing: border-box; }
+    html,body{ height:100%; }
+
+    /* --- FIX: stable background base (prevents scroll seam) --- */
+    html{
+      background: var(--bg1); /* fallback */
+    }
+
+    body{
+      margin:0;
+      font-family: var(--sans);
+      background: none;             /* IMPORTANT: remove scrolling background */
+      color: var(--fg);
+      overflow-x: hidden;
+      isolation: isolate;           /* IMPORTANT: keep blend layers consistent */
+    }
+
+    /* fixed base background layer */
+    body::before{
+      content:"";
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(1200px 800px at 50% 40%, rgba(253,238,33,.08), rgba(0,0,0,0) 60%),
+        linear-gradient(180deg, var(--bg0), var(--bg1));
+      transform: translateZ(0);
+      backface-visibility: hidden;
+    }
+
+    a{ color: inherit; text-decoration: none; }
+    a:hover{ text-decoration: none; }
+
+    .container{ max-width: var(--max); margin: 0 auto; padding: 0 20px; }
+
+    /* -----------------------------
+       Premium background layers
+    ------------------------------ */
+
+    /* --- FIX: wrapper for parallax transform (avoid clobbering drift animation) --- */
+    .ambient-wrap{
+      position: fixed;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+      transform: translateZ(0);
+      will-change: transform;
+    }
+
+    .ambient-gradient{
+      position: absolute;
+      inset:0;
+      z-index:0;
+      pointer-events:none;
+      background-image:
+        radial-gradient(900px 700px at 30% 30%, rgba(255,77,77,.14), rgba(255,77,77,0) 60%),
+        radial-gradient(900px 700px at 70% 35%, rgba(49,130,206,.16), rgba(49,130,206,0) 55%),
+        radial-gradient(900px 700px at 55% 70%, rgba(253,238,33,.18), rgba(253,238,33,0) 58%);
+      filter: saturate(1.05);
+      animation: drift 18s var(--ease) infinite;
+      will-change: transform, filter;
+      transform: translateZ(0);
+      opacity: .95;
+      backface-visibility: hidden;
+    }
+
+    @keyframes drift{
+      0%   { transform: translate3d(0,0,0) scale(1); filter:hue-rotate(0deg) brightness(1); }
+      50%  { transform: translate3d(0,-8px,0) scale(1.02); filter:hue-rotate(18deg) brightness(1.02); }
+      100% { transform: translate3d(0,0,0) scale(1); filter:hue-rotate(0deg) brightness(1); }
+    }
+
+    /* z-indexes shifted up because base bg uses z=0 */
+    .bg-canvas-wrap{ position:fixed; inset:0; z-index:2; pointer-events:none; }
+    canvas{ display:block; width:100%; height:100%; }
+
+    .vignette{
+      position: fixed; inset:0; z-index:3; pointer-events:none;
+      box-shadow: rgba(0,0,0,0.85) 0 0 200px 80px inset;
+      opacity:.58;
+      mix-blend-mode:multiply;
+      transform: translateZ(0);
+    }
+
+    /* CRT scanlines + subtle chromatic fringing */
+    .scanlines{
+      position: fixed; inset:0; z-index:4; pointer-events:none;
+      background:
+        repeating-linear-gradient(
+          180deg,
+          rgba(255,255,255,.035) 0px,
+          rgba(255,255,255,.02) 1px,
+          rgba(0,0,0,0) 3px,
+          rgba(0,0,0,0) 6px
+        );
+      opacity: .20;
+      mix-blend-mode: overlay;
+      transform: translateZ(0);
+    }
+    .noise{
+      position: fixed; inset:0; z-index:5; pointer-events:none;
+      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.7' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.18'/%3E%3C/svg%3E");
+      opacity:.08;
+      mix-blend-mode: overlay;
+      transform: translateZ(0);
+    }
+
+    main{ position: relative; z-index: 20; padding-top: var(--topbar-h); }
+
+    /* -----------------------------
+       Topbar
+    ------------------------------ */
+    .topbar{
+      position: fixed; top:0; left:0; right:0; z-index: 80;
+      backdrop-filter: blur(16px);
+      background: rgba(7,10,18,.52);
+      border-bottom: 1px solid rgba(255,255,255,.06);
+    }
+    .topbar .inner{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 14px 20px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: var(--s4);
+    }
+
+    .brand{
+      display:flex; align-items:center; gap: 10px;
+      font-family: var(--mono);
+      letter-spacing: .6px;
+      font-size: .92rem;
+      color: rgba(233,235,239,.9);
+      user-select:none;
+      white-space: nowrap;
+    }
+    .brand .sig{
+      width: 10px; height:10px; border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 16px rgba(253,238,33,.55);
+    }
+
+    nav{
+      display:flex; align-items:center; gap: 10px; flex-wrap: wrap;
+      font-size: .9rem;
+      color: rgba(233,235,239,.86);
+    }
+    nav a{
+      padding: 8px 10px;
+      border-radius: 12px;
+      border: 1px solid transparent;
+      transition: border-color .25s var(--ease), background .25s var(--ease), transform .25s var(--ease);
+    }
+    nav a:hover{
+      background: rgba(255,255,255,.04);
+      border-color: rgba(255,255,255,.12);
+      transform: translateY(-1px);
+    }
+
+    .cta{
+      display:flex; align-items:center; gap: 10px;
+      white-space: nowrap;
+    }
+
+    .btn{
+      display:inline-flex; align-items:center; gap:10px;
+      padding: 10px 12px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+      transition: transform .25s var(--ease), border-color .25s var(--ease), background .25s var(--ease);
+      font-family: var(--mono);
+      font-size: .86rem;
+      cursor:pointer;
+      user-select:none;
+    }
+    .btn:hover{
+      transform: translateY(-1px);
+      border-color: rgba(253,238,33,.38);
+      background: rgba(255,255,255,.06);
+    }
+    .btn .dot{
+      width:8px; height:8px; border-radius: 50%;
+      background: rgba(253,238,33,.95);
+      box-shadow: 0 0 12px rgba(253,238,33,.50);
+    }
+
+    .btn.secondary{
+      border-color: rgba(255,255,255,.10);
+      background: rgba(255,255,255,.03);
+    }
+    .btn.secondary:hover{
+      border-color: rgba(157,255,183,.35);
+    }
+
+    /* Mobile nav: keep simple, collapses into wrap; optional to add later. */
+    @media (max-width: 980px){
+      nav{ display:none; }
+    }
+
+    /* -----------------------------
+       Sections
+    ------------------------------ */
+    .section{ padding: 110px 0 90px; }
+    .section:first-of-type{ padding-top: 140px; }
+
+    .section-title{
+      font-size: clamp(1.8rem, 2.6vw, 2.35rem);
+      letter-spacing:-.03em;
+      margin: 0 0 26px 0;
+      position: relative;
+    }
+    .section-title .ghost{
+      position:absolute;
+      inset:auto auto 0 0;
+      transform: translateY(-130%);
+      font-family: var(--mono);
+      letter-spacing: 6px;
+      font-size: .8rem;
+      color: rgba(233,235,239,.18);
+      text-transform: uppercase;
+      pointer-events:none;
+    }
+
+    /* -----------------------------
+        Hero intro: fly-in stagger on load
+    ------------------------------ */
+    .hero-intro > *{
+      opacity: 0;
+      transform: translate3d(0, 18px, 0);
+      filter: blur(6px);
+      will-change: transform, opacity, filter;
+    }
+
+    .hero-intro.is-in > *{
+      animation: heroFlyIn .75s var(--ease) both;
+      animation-delay: var(--d, 0ms);
+    }
+
+    @keyframes heroFlyIn{
+      0%{
+        opacity: 0;
+        transform: translate3d(0, 18px, 0);
+        filter: blur(6px);
+      }
+      100%{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+        filter: blur(0px);
+      }
+    }
+
+    /* Reduced motion */
+    @media (prefers-reduced-motion: reduce){
+      .hero-intro > *{ opacity: 1; transform: none; filter: none; }
+      .hero-intro.is-in > *{ animation: none; }
+    }
+
+    /* -----------------------------
+       Hero (Screenshot Vibe)
+    ------------------------------ */
+    .hero{
+      min-height: calc(100vh - var(--topbar-h));
+      display:grid;
+      place-items:center;
+      text-align:center;
+      position: relative;
+      isolation: isolate;
+    }
+
+    /* Side vertical words like screenshot */
+    .side-word{
+      position: absolute;
+      top: 84px;
+      bottom: 50px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      pointer-events:none;
+      z-index: 10;
+      opacity: .95;
+      filter: drop-shadow(0 20px 80px rgba(0,0,0,.65));
+    }
+    .side-word.left{ left: 16px; }
+    .side-word.right{ right: 16px; }
+
+    .side-word span{
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      font-weight: 800;
+      font-size: clamp(3.2rem, 7vw, 5.2rem);
+      letter-spacing: .05em;
+      color: #F8FAFF;
+      -webkit-text-stroke: 2px rgba(255,255,255,.1);
+      text-shadow:
+        2px 0 0 rgba(255,77,77,.75),
+        -2px 0 0 rgba(49,130,206,.75),
+        0 0 18px rgba(0,0,0,.35);
+      transform: translateZ(0);
+    }
+    @media (max-width: 1100px){
+      .side-word{ display:none; }
+    }
+
+    .hero-inner{
+      position: relative;
+      z-index: 20;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Headline: neon/terminal */
+    .hero-headline{
+      font-family: var(--mono);
+      font-weight: 800;
+      font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: rgba(253,238,33,.98);
+      text-shadow:
+        0 0 10px rgba(253,238,33,.28),
+        0 0 26px rgba(253,238,33,.18),
+        0 40px 120px rgba(0,0,0,.65);
+      margin: 0 0 10px 0;
+      transform: translateZ(0);
+    }
+
+    .hero-subline{
+      font-family: var(--mono);
+      font-weight: 600;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: rgba(233,235,239,.65);
+      margin: 0 0 18px 0;
+      font-size: .92rem;
+    }
+
+    .hero-title{
+      display:inline-flex;
+      align-items:center;
+      gap: 10px;
+      padding: 10px 14px;
+      border-radius: 14px;
+      border: 1px solid rgba(253,238,33,.22);
+      background: rgba(0,0,0,.25);
+      backdrop-filter: blur(10px);
+      box-shadow: var(--shadow2);
+      font-family: var(--mono);
+      font-size: .95rem;
+      color: rgba(233,235,239,.92);
+      margin: 0 0 18px 0;
+    }
+    .hero-title .money{
+      color: rgba(253,238,33,.95);
+      text-shadow: 0 0 10px rgba(253,238,33,.25);
+    }
+
+    .hero-desc{
+      max-width: 860px;
+      margin: 0 auto;
+      color: rgba(233,235,239,.82);
+      line-height: 1.75;
+      font-size: 1.05rem;
+    }
+    .hero-desc b{
+      color: rgba(233,235,239,.96);
+      font-weight: 650;
+    }
+
+    /* One-time glow/flash on first visit */
+    .hero-headline.flash-pulse{
+      animation:
+        headlineFlash 1.5s cubic-bezier(.4,0,.6,1) 1,
+        headlinePulse 3s cubic-bezier(.2,.8,.2,1) 0.18s 1;
+    }
+
+    @keyframes headlineFlash{
+      0%{
+        filter: brightness(1);
+        text-shadow:
+          0 0 10px rgba(253,238,33,.28),
+          0 0 26px rgba(253,238,33,.18);
+        transform: scale(1);
+      }
+      60%{
+        filter: brightness(1.8);
+        text-shadow:
+          0 0 18px rgba(253,238,33,.85),
+          0 0 60px rgba(253,238,33,.55),
+          0 0 120px rgba(253,238,33,.25);
+        transform: scale(1.02);
+      }
+      100%{
+        filter: brightness(1.2);
+        text-shadow:
+          0 0 14px rgba(253,238,33,.45),
+          0 0 40px rgba(253,238,33,.25);
+        transform: scale(1);
+      }
+    }
+
+    /* 2) Sanfter Premium-Pulse */
+    @keyframes headlinePulse{
+      0%{
+        filter: brightness(1.2);
+        text-shadow:
+          0 0 14px rgba(253,238,33,.45),
+          0 0 40px rgba(253,238,33,.25);
+      }
+      50%{
+        filter: brightness(1.35);
+        text-shadow:
+          0 0 16px rgba(253,238,33,.55),
+          0 0 55px rgba(253,238,33,.32);
+      }
+      100%{
+        filter: brightness(1);
+        text-shadow:
+          0 0 10px rgba(253,238,33,.28),
+          0 0 26px rgba(253,238,33,.18);
+      }
+    }
+
+    /* CTA buttons row like screenshot */
+    .hero-actions{
+      display:flex;
+      flex-wrap: wrap;
+      justify-content:center;
+      gap: 12px;
+      margin-top: 26px;
+    }
+    .tile-link{
+      display:inline-flex;
+      align-items:center;
+      gap: 10px;
+      padding: 12px 16px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(0,0,0,.22);
+      backdrop-filter: blur(10px);
+      font-family: var(--mono);
+      font-size: .9rem;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: rgba(233,235,239,.92);
+      transition: transform .25s var(--ease), border-color .25s var(--ease), background .25s var(--ease);
+      box-shadow: var(--shadow2);
+    }
+    .tile-link:hover{
+      transform: translateY(-2px);
+      border-color: rgba(253,238,33,.35);
+      background: rgba(255,255,255,.05);
+    }
+    .tile-link svg{
+      width: 16px; height: 16px;
+      opacity: .92;
+      filter: drop-shadow(0 6px 16px rgba(0,0,0,.35));
+    }
+
+    .hero-figure .frame{
+      width: 100%;
+      height: 100%;
+      border-radius: 22px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: radial-gradient(120px 120px at 40% 35%, rgba(253,238,33,.20), rgba(0,0,0,0) 55%),
+                  linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      overflow:hidden;
+      position: relative;
+      box-shadow: var(--shadow);
+    }
+    .hero-figure img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1.03);
+      opacity: .98;
+    }
+    .hero-figure .badge{
+      position:absolute;
+      left: 12px;
+      top: 12px;
+      padding: 7px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(253,238,33,.22);
+      background: rgba(0,0,0,.25);
+      font-family: var(--mono);
+      font-size: .78rem;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: rgba(233,235,239,.88);
+      backdrop-filter: blur(10px);
+    }
+    @media (max-width: 980px){
+      .hero-figure{ display:none; }
+    }
+
+    /* Scroll down indicator */
+    .scroll-down{
+      margin-top: 40px;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      gap: 10px;
+      cursor:pointer;
+      user-select:none;
+    }
+    .scroll-down .label{
+      color: rgba(253,238,33,.92);
+      text-shadow: 0 0 10px rgba(253,238,33,.30);
+      font-family: var(--mono);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: .85rem;
+      opacity: .92;
+    }
+    .arrow{
+      width: 38px; height: 38px;
+      filter: drop-shadow(0 0 10px rgba(253,238,33,.35));
+      opacity: .92;
+      animation: bounce 2s infinite;
+    }
+    @keyframes bounce{
+      0%, 100%{ transform: translateY(0); }
+      50%{ transform: translateY(7px); }
+    }
+
+    .typing{
+      font-family: var(--mono);
+      color: rgba(253,238,33,.98);
+      text-shadow: 0 0 14px rgba(253,238,33,.18);
+    }
+    .typing-caret{
+      font-family: var(--mono);
+      color: rgba(253,238,33,.85);
+      margin-left: 6px;
+      animation: caretBlink 1s steps(2, start) infinite;
+    }
+    @keyframes caretBlink{
+      50%{ opacity: 0; }
+    }
+
+    /* -----------------------------
+       Layout blocks
+    ------------------------------ */
+    .grid{ display:grid; gap: 18px; }
+    .grid.two{ grid-template-columns: repeat(2, minmax(0,1fr)); }
+    .grid.three{ grid-template-columns: repeat(3, minmax(0,1fr)); }
+    @media (max-width: 920px){
+      .grid.two, .grid.three{ grid-template-columns: 1fr; }
+    }
+
+    .card{
+      background:
+        radial-gradient(600px 200px at 20% 0%, rgba(253,238,33,.08), rgba(0,0,0,0) 45%),
+        linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.035));
+      border: 1px solid rgba(255,255,255,.11);
+      border-radius: var(--radius2);
+      box-shadow: var(--shadow2);
+      padding: 18px 18px;
+      position: relative;
+      overflow: hidden;
+      transform: translateZ(0);
+      transition: transform .25s var(--ease), border-color .25s var(--ease), background .25s var(--ease);
+    }
+    .card:hover{
+      transform: translateY(-3px);
+      border-color: rgba(253,238,33,.32);
+      background:
+        radial-gradient(600px 220px at 18% 0%, rgba(253,238,33,.10), rgba(0,0,0,0) 48%),
+        linear-gradient(180deg, rgba(255,255,255,.065), rgba(255,255,255,.04));
+    }
+
+    .card .banner{
+      position:absolute;
+      top: 14px; right: 14px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(0,0,0,.22);
+      font-family: var(--mono);
+      font-size: .78rem;
+      color: rgba(233,235,239,.86);
+      backdrop-filter: blur(10px);
+    }
+    .card h3{
+      margin: 0 0 8px 0;
+      letter-spacing: -.02em;
+      font-size: 1.1rem;
+    }
+    .card .meta{
+      color: rgba(233,235,239,.76);
+      font-family: var(--mono);
+      font-size: .86rem;
+      margin-bottom: 12px;
+    }
+    .card p{
+      margin: 0;
+      color: rgba(233,235,239,.78);
+      line-height: 1.7;
+      font-size: .98rem;
+    }
+    .chips{
+      display:flex;
+      flex-wrap:wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+    .chip{
+      font-family: var(--mono);
+      font-size: .78rem;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.03);
+      color: rgba(233,235,239,.82);
+      transition: border-color .25s var(--ease), transform .25s var(--ease), background .25s var(--ease);
+    }
+    .chip:hover{
+      transform: translateY(-1px);
+      border-color: rgba(157,255,183,.28);
+      background: rgba(255,255,255,.04);
+    }
+
+    /* =============================
+       PROJECTS GRID (2 top, 3 bottom)
+    ============================= */
+    .projects-grid{
+      display: grid;
+      gap: 18px;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      align-items: stretch;
+    }
+
+    /* Default: 3er Reihe (jede Karte 2/6 = 1/3 Breite) */
+    .projects-grid > .project-card{
+      grid-column: span 2;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    /* Erste zwei Karten: 2er Reihe (jede Karte 3/6 = 1/2 Breite) */
+    .projects-grid > .project-card:nth-child(1),
+    .projects-grid > .project-card:nth-child(2){
+      grid-column: span 3;
+    }
+
+    /* Tablet/Mobile: alles untereinander */
+    @media (max-width: 980px){
+      .projects-grid{
+        grid-template-columns: 1fr;
+      }
+      .projects-grid .project-card{
+        grid-column: auto;
+      }
+    }
+
+    /* =============================
+       Project card media slot
+    ============================= */
+    .project-card{
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .project-media{
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+      background:
+        radial-gradient(700px 220px at 30% 20%, rgba(255,255,255,.08), rgba(0,0,0,0) 55%),
+        rgba(0,0,0,.18);
+    }
+
+    .project-media img,
+    .project-media video,
+    .project-media iframe{
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      border: 0;
+    }
+
+    .project-media:after{
+      content:"";
+      position:absolute;
+      inset:0;
+      pointer-events:none;
+      background:
+        linear-gradient(180deg, rgba(0,0,0,.15), rgba(0,0,0,0) 55%),
+        radial-gradient(120% 90% at 50% 10%, rgba(255,255,255,.06), rgba(0,0,0,0) 55%);
+      opacity: .9;
+    }
+
+    .project-content{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 18px;
+      flex: 1;
+    }
+
+    .project-text{
+      flex: 1;
+      overflow-y: auto;
+      padding-right: 6px;
+      color: rgba(233,235,239,.78);
+      line-height: 1.7;
+      font-size: .98rem;
+    }
+
+    .project-card .banner{
+      top: 14px;
+      right: 14px;
+      z-index: 2;
+    }
+
+    .project-play{
+      position:absolute;
+      inset:auto 14px 14px auto;
+      z-index: 2;
+      width: 44px;
+      height: 44px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.16);
+      background: rgba(0,0,0,.35);
+      backdrop-filter: blur(10px);
+      display: grid;
+      place-items: center;
+      box-shadow: 0 14px 40px rgba(0,0,0,.45);
+    }
+    .project-play svg{
+      width: 18px;
+      height: 18px;
+      opacity: .9;
+    }
+
+    .project-details{
+      margin-top: 14px;
+      border-top: 1px solid rgba(255,255,255,.07);
+      padding-top: 12px;
+    }
+
+    .project-details summary{
+      list-style: none;
+      cursor: pointer;
+      user-select: none;
+      font-family: var(--mono);
+      font-size: .86rem;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: rgba(233,235,239,.82);
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 10px;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.18);
+      transition: transform .25s var(--ease), border-color .25s var(--ease), background .25s var(--ease);
+    }
+
+    .project-details summary:hover{
+      transform: translateY(-1px);
+      border-color: rgba(253,238,33,.26);
+      background: rgba(255,255,255,.04);
+    }
+
+    .project-details summary::-webkit-details-marker{ display:none; }
+
+    .project-details[open] summary{
+      border-color: rgba(157,255,183,.22);
+    }
+
+    .project-details .details-body{
+      margin-top: 12px;
+      color: rgba(233,235,239,.78);
+      line-height: 1.7;
+    }
+
+    .project-details ul{
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .project-details li{ margin: 6px 0; }
+
+    .project-action{
+      margin-top: 14px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 12px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+      font-family: var(--mono);
+      font-size: .86rem;
+      color: rgba(233,235,239,.90);
+      transition: transform .25s var(--ease), border-color .25s var(--ease), background .25s var(--ease);
+    }
+
+    .project-action:hover{
+      transform: translateY(-1px);
+      border-color: rgba(253,238,33,.32);
+      background: rgba(255,255,255,.06);
+    }
+
+    .project-cta{
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid rgba(255,255,255,.07);
+    }
+
+    .project-cta .project-action{
+      margin-top: 0;
+    }
+
+    .project-carousel{
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .project-carousel .slide{
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      transition: opacity .35s var(--ease);
+    }
+
+    .project-carousel .slide.is-active{ opacity: 1; }
+
+    .project-carousel .nav{
+      position: absolute;
+      left: 12px;
+      right: 12px;
+      bottom: 12px;
+      display:flex;
+      justify-content: space-between;
+      gap: 10px;
+      z-index: 3;
+      pointer-events: none;
+    }
+
+    .project-carousel button{
+      pointer-events: auto;
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(0,0,0,.35);
+      color: rgba(233,235,239,.92);
+      border-radius: 12px;
+      padding: 8px 10px;
+      font-family: var(--mono);
+      font-size: .78rem;
+      cursor: pointer;
+      backdrop-filter: blur(10px);
+    }
+
+    .project-carousel button:hover{
+      border-color: rgba(253,238,33,.28);
+    }
+
+    /* -----------------------------
+       Featured case study block
+    ------------------------------ */
+    .featured{
+      border-radius: 26px;
+      padding: 22px;
+      border: 1px solid rgba(253,238,33,.18);
+      background:
+        radial-gradient(700px 260px at 25% 10%, rgba(253,238,33,.12), rgba(0,0,0,0) 55%),
+        radial-gradient(700px 260px at 75% 25%, rgba(49,130,206,.10), rgba(0,0,0,0) 55%),
+        linear-gradient(180deg, rgba(255,255,255,.055), rgba(255,255,255,.03));
+      box-shadow: var(--shadow);
+      overflow:hidden;
+      position: relative;
+    }
+    .featured:before{
+      content:"";
+      position:absolute; inset:-2px;
+      background: radial-gradient(500px 200px at 50% 0%, rgba(253,238,33,.14), rgba(0,0,0,0) 60%);
+      opacity: .55;
+      pointer-events:none;
+    }
+    .featured .wrap{
+      display:grid;
+      grid-template-columns: 1.35fr .65fr;
+      gap: 18px;
+      position: relative;
+      z-index: 2;
+    }
+    @media (max-width: 980px){
+      .featured .wrap{ grid-template-columns: 1fr; }
+    }
+    .featured h3{
+      margin: 0 0 8px 0;
+      font-size: 1.35rem;
+      letter-spacing: -.02em;
+    }
+    .featured .kicker{
+      font-family: var(--mono);
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      font-size: .82rem;
+      color: rgba(233,235,239,.68);
+      margin-bottom: 10px;
+    }
+    .featured .bullets{
+      margin: 12px 0 0;
+      padding-left: 18px;
+      color: rgba(233,235,239,.78);
+      line-height: 1.7;
+    }
+    .featured .bullets li{ margin: 6px 0; }
+    .featured .side{
+      border-radius: 20px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.22);
+      backdrop-filter: blur(10px);
+      padding: 14px;
+      box-shadow: var(--shadow2);
+    }
+    .featured .stat{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap: 12px;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255,255,255,.07);
+    }
+    .featured .stat:last-child{ border-bottom: none; }
+    .featured .stat .label{
+      font-family: var(--mono);
+      font-size: .78rem;
+      letter-spacing: .10em;
+      text-transform: uppercase;
+      color: rgba(233,235,239,.62);
+    }
+    .featured .stat .value{
+      font-family: var(--mono);
+      font-size: .92rem;
+      color: rgba(233,235,239,.90);
+      text-align:right;
+    }
+
+    /* -----------------------------
+       Experience timeline
+    ------------------------------ */
+    .timeline{ position: relative; padding-left: 22px; }
+    .timeline:before{
+      content:"";
+      position:absolute;
+      left: 7px; top: 0; bottom: 0;
+      width: 2px;
+      background: linear-gradient(180deg, rgba(253,238,33,.55), rgba(255,255,255,0));
+      opacity: .50;
+    }
+    .titem{ position: relative; padding: 18px; margin-bottom: 14px; }
+    .titem:before{
+      content:"";
+      position:absolute;
+      left:-22px;
+      top: 26px;
+      width: 12px; height: 12px;
+      border-radius: 50%;
+      background: rgba(253,238,33,.92);
+      box-shadow: 0 0 18px rgba(253,238,33,.42);
+    }
+    .titem .company{
+      display:flex; align-items:baseline; justify-content:space-between; gap: 12px;
+      flex-wrap:wrap;
+    }
+    .titem .company .name{ font-weight: 750; letter-spacing: -.02em; }
+    .titem .company .dates{
+      font-family: var(--mono);
+      color: rgba(233,235,239,.70);
+      font-size: .86rem;
+    }
+    .titem ul{
+      margin: 12px 0 0;
+      padding-left: 18px;
+      color: rgba(233,235,239,.78);
+      line-height: 1.7;
+    }
+    .titem li{ margin: 6px 0; }
+
+    /* -----------------------------
+       Terminal
+    ------------------------------ */
+    .terminal{
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(5,7,14,.84);
+      overflow:hidden;
+      box-shadow: var(--shadow);
+    }
+    .terminal-head{
+      display:flex; align-items:center; justify-content:space-between;
+      padding: 10px 12px;
+      background: rgba(255,255,255,.04);
+      border-bottom: 1px solid rgba(255,255,255,.07);
+    }
+    .dots{ display:flex; gap: 7px; }
+    .d{ width:10px; height:10px; border-radius: 50%; }
+    .d.r{ background:#ff5f56; }
+    .d.y{ background:#ffbd2e; }
+    .d.g{ background:#27c93f; }
+    .terminal-title{
+      font-family: var(--mono);
+      font-size: .86rem;
+      color: rgba(233,235,239,.75);
+    }
+    .terminal-body{
+      padding: 14px 14px 16px;
+      font-family: var(--mono);
+      font-size: .92rem;
+      color: rgba(233,235,239,.88);
+      line-height: 1.55;
+      max-height: 420px;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+    .cmd{ color: rgba(233,235,239,.92); }
+    .prompt{ color: rgba(253,238,33,.95); }
+    .path{ color: rgba(157,255,183,.90); }
+    .result{
+      color: rgba(233,235,239,.82);
+      margin: 4px 0 12px 0;
+      white-space: pre-wrap;
+    }
+
+    /* -----------------------------
+       Reveal animations
+    ------------------------------ */
+    .reveal{
+      opacity:0;
+      transform: translateY(26px);
+      transition: opacity .85s var(--ease), transform .85s var(--ease);
+      will-change: opacity, transform;
+    }
+    .reveal.visible{
+      opacity:1;
+      transform: translateY(0);
+    }
+
+    /* -----------------------------
+       Footer
+    ------------------------------ */
+    footer{
+      padding: 64px 0 74px;
+      color: rgba(233,235,239,.60);
+      text-align:center;
+      font-size: .9rem;
+    }
+    footer .made{
+      font-family: var(--mono);
+      color: rgba(233,235,239,.70);
+    }
+    footer .made b{
+      color: rgba(253,238,33,.95);
+      text-shadow: 0 0 10px rgba(253,238,33,.30);
+      font-weight: 800;
+    }
+
+    /* -----------------------------
+       Accessibility / reduced motion
+    ------------------------------ */
+    .skip{
+      position: absolute;
+      left: -9999px;
+      top: 10px;
+      z-index: 9999;
+      background: rgba(0,0,0,.8);
+      border: 1px solid rgba(255,255,255,.16);
+      color: rgba(233,235,239,.95);
+      padding: 10px 12px;
+      border-radius: 12px;
+      font-family: var(--mono);
+    }
+    .skip:focus{ left: 12px; outline: none; }
+
+    :focus-visible{
+      outline: 2px solid rgba(253,238,33,.65);
+      outline-offset: 3px;
+      border-radius: 12px;
+    }
+
+    @media (prefers-reduced-motion: reduce){
+      .ambient-gradient, .arrow{ animation:none !important; }
+      .reveal{ transition:none !important; }
+    }
+
+    /* -----------------------------
+       Ticker / Banner
+    ------------------------------ */
+    .ticker{
+      position: relative;
+      width: 100%;
+      padding: 10px 0;
+      background: rgba(255,255,255,0.04);
+      border-top: 1px solid rgba(255,255,255,0.08);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      backdrop-filter: blur(10px);
+    }
+
+    .ticker__mask{
+      overflow: hidden;
+      -webkit-mask-image: linear-gradient(to right,
+        transparent 0%,
+        black 8%,
+        black 92%,
+        transparent 100%);
+      mask-image: linear-gradient(to right,
+        transparent 0%,
+        black 8%,
+        black 92%,
+        transparent 100%);
+    }
+
+    .ticker__track{
+      display: flex;
+      width: max-content;
+      white-space: nowrap;
+      gap: 14px;
+      will-change: transform;
+      animation: ticker-move 28s linear infinite;
+    }
+
+    .ticker:hover .ticker__track,
+    .ticker:focus-within .ticker__track{
+      animation-play-state: paused;
+    }
+
+    .ticker__set{
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      padding: 0 14px;
+    }
+
+    .chip{
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      letter-spacing: .2px;
+      color: rgba(255,255,255,0.86);
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(0,0,0,0.18);
+      border: 1px solid rgba(255,255,255,0.10);
+      box-shadow: 0 0 0 1px rgba(0,0,0,0.10) inset;
+    }
+
+    .sep{
+      color: rgba(255,255,255,0.28);
+      user-select: none;
+    }
+
+    @keyframes ticker-move{
+      from { transform: translate3d(0,0,0); }
+      to   { transform: translate3d(-50%,0,0); }
+    }
+
+    @media (prefers-reduced-motion: reduce){
+      .ticker__track{ animation: none; }
+    }
+
+    /* =============================
+       WORK TIMELINE (stable geometry)
+    ============================= */
+    .work-timeline{
+      --line-x: 48px;
+      --pill-w: 64px;
+      --pill-h: 34px;
+      --pill-gap: 14px;
+      --conn-w: 26px;
+
+      position: relative;
+      padding-left: 60px;
+      display: grid;
+      gap: 26px;
+    }
+
+    .work-timeline:before{
+      content:"";
+      position:absolute;
+      left: var(--line-x);
+      top: 6px;
+      bottom: 6px;
+      width: 2px;
+      background: linear-gradient(180deg, rgba(120,190,255,.35), rgba(255,255,255,0));
+      opacity: .9;
+    }
+
+    .work-item{
+      position: relative;
+      padding-left: 92px;
+    }
+
+    .work-year{
+      position: absolute;
+      top: 50%;
+      left: calc(var(--line-x) - (var(--pill-w) / 2));
+      transform: translateY(-50%);
+      width: var(--pill-w);
+      height: var(--pill-h);
+      display: grid;
+      place-items: center;
+      border-radius: 999px;
+      font-family: var(--mono);
+      font-weight: 700;
+      font-size: .84rem;
+      letter-spacing: .08em;
+      color: rgba(233,235,239,.95);
+      background: var(--accent);
+      border: 1px solid rgba(255,255,255,.12);
+      box-shadow: 0 14px 40px rgba(0,0,0,.45);
+      z-index: 3;
+    }
+
+    .work-item:before{
+      top: 50%;
+      left: calc(var(--line-x) - 6px);
+      transform: translateY(-50%);
+      z-index: 4;
+    }
+
+    .year-connector{
+      position: absolute;
+      top: 50%;
+      left: calc(var(--line-x) - (var(--pill-w) / 2));
+      transform: translate(-100%, -50%);
+      width: var(--conn-w);
+      height: 2px;
+      background: linear-gradient(90deg, rgba(255,255,255,.25), var(--accent));
+      opacity: .9;
+      z-index: 2;
+    }
+
+    .work-card{
+      border-radius: 22px;
+      border: 1px solid rgba(255,255,255,.10);
+      background:
+        radial-gradient(900px 240px at 15% 35%, var(--accentSoft, rgba(255,255,255,.06)), rgba(0,0,0,0) 55%),
+        linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      box-shadow: var(--shadow);
+      padding: 18px 18px;
+      display: grid;
+      grid-template-columns: 360px 1fr;
+      gap: 18px;
+      align-items: start;
+      min-height: 150px;
+    }
+
+    .work-left{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 10px 12px;
+    }
+
+    .work-logo{
+      width: 74px;
+      height: 74px;
+      border-radius: 18px;
+      background:
+        radial-gradient(120px 80px at 30% 25%, rgba(255,255,255,.10), rgba(0,0,0,0) 55%),
+        rgba(0,0,0,.18);
+      border: 1px solid rgba(255,255,255,.14);
+      box-shadow: 0 18px 55px rgba(0,0,0,.45);
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+    }
+
+    .work-logo img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 10px;
+      opacity: .95;
+    }
+
+    .work-logo-text{
+      font-family: var(--mono);
+      font-weight: 800;
+      letter-spacing: .08em;
+      color: rgba(233,235,239,.9);
+    }
+
+    .work-head{ width: 100%; }
+
+    .work-company{
+      font-weight: 800;
+      font-size: 1.12rem;
+      letter-spacing: -0.02em;
+      margin: 0;
+    }
+
+    .work-company:after{
+      content:"";
+      display:block;
+      width: 44px;
+      height: 2px;
+      margin-top: 10px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--accent), rgba(255,255,255,0));
+      opacity: .85;
+    }
+
+    .work-role{
+      display: inline-flex;
+      align-items: center;
+      margin-top: 8px;
+      padding: 10px 12px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.20);
+      font-family: var(--mono);
+      font-size: .82rem;
+      color: rgba(233,235,239,.92);
+      width: fit-content;
+      line-height: 1.25;
+    }
+
+    .work-dates{
+      margin-top: 10px;
+      font-family: var(--mono);
+      font-size: .85rem;
+      color: rgba(233,235,239,.62);
+      opacity: .9;
+    }
+
+    .work-right{ display: grid; gap: 14px; }
+    .work-bullets{ margin: 0; padding-left: 18px; color: rgba(233,235,239,.80); line-height: 1.7; }
+    .work-bullets li{ margin: 6px 0; }
+
+    .work-chips{ display:flex; flex-wrap: wrap; gap: 10px; }
+    .work-chip{
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-family: var(--mono);
+      font-size: .78rem;
+      color: rgba(233,235,239,.90);
+      background: rgba(0,0,0,.22);
+      border: 1px solid rgba(255,255,255,.10);
+      box-shadow: 0 0 0 1px rgba(0,0,0,.10) inset;
+    }
+
+    @media (max-width: 980px){
+      .work-timeline{ padding-left: 0; }
+      .work-timeline:before{ display:none; }
+      .work-year{ position: static; transform: none; margin: 0 0 10px 0; }
+      .year-connector{ display:none; }
+      .work-item:before{ display:none; }
+      .work-card{ grid-template-columns: 1fr; }
+    }
+
+    /* --- About spacing fixes --- */
+    .about-headline{
+      display: inline-flex;
+      align-items: baseline;
+      gap: 10px;
+      margin: 0 0 10px 0;
+      line-height: 1.15;
+    }
+
+    .about-a{
+      font-family: var(--mono);
+      color: rgba(233,235,239,.92);
+    }
+
+    .about-kicker{
+      margin-bottom: 6px;
+    }
+
+    .about-block p{
+      margin: 0 0 12px 0;
+      line-height: 1.7;
+    }
+
+    .about-block p:last-child{
+      margin-bottom: 0;
+    }
+
+    .about-label{
+      margin: 0 0 6px 0;
+    }
+
+    .about-split{
+      margin-top: 14px;
+      padding-top: 14px;
+      gap: 12px;
+    }
+
+    .about-block .chips{
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .hero .reveal{
+      opacity: 1 !important;
+      transform: none !important;
+      transition: none !important;
+    }
+
+    /* =============================
+       Project card spacing fixes
+    ============================== */
+    .project-content{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 18px;
+    }
+
+    .project-content h3{ margin: 0; }
+    .project-content .meta{ margin: 0; }
+    .project-content p{ margin: 0; }
+
+    .project-content .chips{
+      margin: 0;
+    }
+
+    .project-content .project-details{
+      margin-top: 6px;
+    }
+
+    .terminal .result{
+      color: rgba(233,235,239,.82);
+      margin: 4px 0 12px 0;
+      white-space: normal;
+    }
+
+    .terminal .result pre{
+      margin: 0;
+      padding: 0;
+      white-space: pre;
+      font-family: var(--mono);
+      line-height: 1.45;
+      font-size: 0.95rem;
+      color: inherit;
+
+      tab-size: 2;
+      -moz-tab-size: 2;
+    }
+	
+	/* Terminal typing caret */
+	.term-caret {
+	  display: inline-block;
+	  width: 0.6ch;
+	  margin-left: 2px;
+	  opacity: 1;
+	  animation: termBlink 1s steps(1) infinite;
+	}
+
+	@keyframes termBlink {
+	  50% { opacity: 0; }
+	}
+
+	/* Optionale sanfte Erscheinung des Outputs */
+	.term-out-appear {
+	  animation: termOutAppear 160ms ease-out both;
+	}
+
+	@keyframes termOutAppear {
+	  from { opacity: 0; transform: translateY(-2px); }
+	  to   { opacity: 1; transform: translateY(0); }
+	}
+	
+	/* -----------------------------
+	   Education (cards + lists)
+	------------------------------ */
+	.edu-kv{
+	  margin-top: 10px;
+	  display: grid;
+	  gap: 6px;
+	  color: rgba(233,235,239,.78);
+	  line-height: 1.7;
+	  font-size: .98rem;
+	}
+	.edu-kv b{
+	  color: rgba(233,235,239,.92);
+	  font-weight: 650;
+	}
+	.edu-details ul{
+	  margin: 0;
+	  padding-left: 18px;
+	}
+	.edu-details li{
+	  margin: 6px 0;
+	}
+	
+	.edu-head {
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: flex-start;
+	  margin-bottom: 10px;
+	}
+
+	.edu-right {
+	  display: flex;
+	  flex-direction: column;
+	  align-items: flex-end;
+	  gap: 4px;
+	}
+
+	.edu-period-right {
+	  font-size: .75rem;
+	  opacity: .65;
+	  white-space: nowrap;
+	  letter-spacing: .02em;
+	}
+	
+	/* --- EDUCATION: badge + date as a right-aligned stack --- */
+	#education .edu-head{
+	  display: flex;
+	  justify-content: flex-end;   /* push block to the right */
+	  align-items: flex-start;
+	  margin-bottom: 10px;
+	}
+
+	/* IMPORTANT: disable the global absolute-position banner ONLY in Education */
+	#education .card .banner{
+	  position: static !important;
+	  top: auto !important;
+	  right: auto !important;
+	  inset: auto !important;
+	}
+
+	/* stack M.Sc. and period vertically and align them to the right */
+	#education .edu-right{
+	  display: flex;
+	  flex-direction: column;
+	  align-items: flex-end;
+	  gap: 4px;
+	}
+
+	#education .edu-period-right{
+	  font-size: .75rem;
+	  opacity: .65;
+	  white-space: nowrap;
+	  letter-spacing: .02em;
+	}
+
+	/* --- EDUCATION header layout fix --- */
+	#education .card{
+	  padding-top: 18px; /* keep card padding consistent */
+	}
+
+	#education .edu-head{
+	  position: absolute;
+	  top: 14px;
+	  right: 14px;
+	  margin: 0;
+	}
+
+	/* ensure title starts immediately at top */
+	#education .card h3{
+	  margin-top: 0;
+	}
+
+
+  </style>
+</head>
 
 <body>
+  <a class="skip" href="#home">Skip to content</a>
 
-  <!-- Navigation Menu-->
-  <!-- Nav class 1 -->
-  <nav class="hide-on-small-only">
-    <ul class="side-nav fixed section table-of-contents">
+  <div class="ambient-gradient" aria-hidden="true"></div>
+  <div class="bg-canvas-wrap" aria-hidden="true">
+    <canvas id="bgParticles"></canvas>
+  </div>
+  <div class="vignette" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
 
-      <li class="logo">
-        <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
-          class="brand-logo grey-blue-text">
-          <!--img src="/assets/img/Profilfoto_quadrat.jpg" class="circle img-responsive profile-pic" alt="avatar"-->
+  <header class="topbar">
+    <div class="inner">
+      <div class="brand" aria-label="Johannes Koller">
+        <span class="sig" aria-hidden="true"></span>
+        johannes@portfolio ~ $
+      </div>
+
+      <nav aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#aboutme">About me</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+		<a href="#education">Education</a>
+        <a href="#console">Console</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="cta">
+        <a class="btn secondary" href="https://drive.google.com/drive/folders/12stpTKdHP1E7Zqz3ZOGycQ0V4PJujzLG?hl=de" target="_blank" rel="noopener noreferrer" aria-label="Resume">
+          <span class="dot" aria-hidden="true" style="background:rgba(157,255,183,.95); box-shadow:0 0 12px rgba(157,255,183,.45)"></span>
+          resume
         </a>
-      </li>
-
-      <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i><span>About</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Experience section" href="#experience"
-          class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-trending-up small"></i><span>Experience</span></a>
-      </li>
-
-      <li class="bold">
-        <!-- mdi-av-web small
-             mdi-av-my-library-books small-->
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
-            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
-      </li>
-
-      <li class="bold">
-        <!--
-        ICONS:
-        mdi-action-assessment
-        mdi-social-poll
-        mdi-av-equalizer
-        -->
-        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-assessment small"></i><span>Skills</span></a>
-      </li>
-
-      <li class="bold">
-        <!--
-        ICONS:
-        -->
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Education</span></a>
-      </li>
-
-      <li class="bold">
-        <!-- 
-        1. mdi-communication-contacts
-        2. mdi-content-mail
-        3. mdi-communication-email
-        -->
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
-
-      <li class="bold">
-        <!--
-        ICONS:
-        1. mdi-action-description
-        2. mdi-file-folder
-        3. mdi-file-folder-open
-        4. mdi-file-attachment
-        5. mdi-file-folder-shared
-        -->
-        <!-- <a aria-label="Open Varad's resume in a new tab" href="#resume" target="_blank"
-          onclick="window.open('https://drive.google.com/file/d/1vYi-bMyIsZPve0x_clxY8xsDtiHiOMd3/view?usp=sharing')"
-          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a> -->
-        <a aria-label="Open Johannes resume in a new tab" href="TODO Lebenslauf" target="_blank"
-          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
-      </li>
-    </ul>
-  </nav>
-
-  <!-- Nav class 2 -->
-  <nav class="hide-on-large only trigger z-depth-1">
-    <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
-      class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-    <div class="name-title">
-      <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Johannes
-        Koller</a><span class="black-text">Software Developer</span>
+        <a class="btn" href="#contact" aria-label="Contact">
+          <span class="dot" aria-hidden="true"></span> ping
+        </a>
+      </div>
     </div>
-  </nav>
+  </header>
 
-  <!-- Nav class 3 -->
-  <nav class="hide-on-large only">
-    <ul id="slide-out" class="side-nav">
-      <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i><span>About</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Experience section" href="#experience"
-          class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-trending-up small"></i><span>Experience</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
-            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-assessment small"></i><span>Skills</span></a>
-      </li>
+  <main id="main">
+    <!-- HERO -->
+    <section id="home" class="section hero" role="banner" aria-label="Johannes Koller Hero">
+      <div class="side-word left" aria-hidden="true"><span>JOHANNES</span></div>
+      <div class="side-word right" aria-hidden="true"><span>KOLLER</span></div>
 
-      <li class="bold">
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Education</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Open Johannes Resume in a new tab" href="TODO Lebenslauf" target="_blank"
-          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
-      </li>
-    </ul>
-  </nav>
+      <div class="hero-inner container hero-intro" id="heroIntro">
+        <h1 class="hero-headline reveal" style="--d: 0ms;">APPLIED AI SYSTEMS</h1>
+        <div class="hero-subline reveal" style="--d: 200ms;">{ ai · multi-agents· evaluation }</div>
 
-  <!-- Main Content-->
-  <main>
-    <!-- First Section: Heading lines and image -->
-    <section id="intro" class="section scrollspy full-height">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="col-md-9">
-          <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
-            <div class="caption">
-              <h2>Hi, I'm <span class="teal">Johannes Koller.</span></h2>
-              <h5 style="color:#fff">A <span class="typing" style="font-weight: 300; color:#3d1ef9"></span></h5>
-              <!-- <h5 style="color:#00796b">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
-              <h5>Self-driven, quick starter, passionate programmer with a curious mind who enjoys solving a complex and
-                challenging real-world problems.</h5>
-            </div>
-            <div class="social">
-              <a href="https://www.linkedin.com/in/johannes-koller-39b015217" target="_blank">
-                <button class="icon-btn linkedin">
-                  <i class="fa fa-linkedin"></i>
-                </button>
-              </a>
-              <a href="https://github.com/jokouno" target="_blank">
-                <button class="icon-btn github">
-                  <i class="fa fa-github"></i>
-                </button>
-              </a>
-            </div>
-            <div class='buttons'>
-              <a href="#about" class="readme">Read More</a>
-              <a href="#contact" class="contactme">Contact Me</a>
-            </div>
-          </div>
+        <div class="hero-title reveal" style="--d: 400ms;">
+          <span class="money">$</span>
+          Software Engineer
+        </div>
+
+        <p class="hero-desc reveal" style="--d: 600ms;">
+          I build <b>applied AI</b> systems that translate complex ideas into reliable, production-ready software.
+        </p>
+
+        <div class="hero-actions reveal" style="--d: 800ms;" aria-label="Primary links">
+          <a class="tile-link" href="https://github.com/jokouno" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 19c-4 1.5-4-2.5-5-3m10 5v-3.87c0-1.12.38-2.09 1-2.87-3.33-.37-6.84-1.63-6.84-7.25 0-1.6.57-2.91 1.5-3.94-.15-.37-.65-1.87.14-3.9 0 0 1.23-.4 4.03 1.5A13.8 13.8 0 0 1 12 6.8c1.23.01 2.47.17 3.63.5 2.8-1.9 4.03-1.5 4.03-1.5.79 2.03.29 3.53.14 3.9.93 1.03 1.5 2.34 1.5 3.94 0 5.63-3.52 6.87-6.86 7.23.62.54 1.06 1.6 1.06 3.23V21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            GitHub
+          </a>
+
+          <a class="tile-link" href="https://www.linkedin.com/in/johannes-koller-39b015217/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7H10V9h4v2a4 4 0 0 1 2-3Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 9h4v12H2z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            LinkedIn
+          </a>
+
+          <a class="tile-link" href="https://scholar.google.com/citations?user=RviiVUYAAAAJ" target="_blank" rel="noopener noreferrer" aria-label="Scholar">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 11v5c0 2.21 3.13 4 7 4s7-1.79 7-4v-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Scholar
+          </a>
+
+          <a class="tile-link" href="https://drive.google.com/drive/folders/12stpTKdHP1E7Zqz3ZOGycQ0V4PJujzLG?hl=de" target="_blank" rel="noopener noreferrer" aria-label="Resume PDF">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2v6h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 13h8M8 17h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Resume
+          </a>
+        </div>
+
+        <div class="scroll-down reveal" style="--d: 450ms;" id="scrollDown" role="button" tabindex="0" aria-label="Scroll down">
+          <div class="label">Scroll Down</div>
+          <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="#FDEE21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 5v14"></path>
+            <path d="M5 12l7 7 7-7"></path>
+          </svg>
         </div>
       </div>
     </section>
 
-    <!-- Second Section: About -->
-    <section id="about" class="section scrollspy">
-      <h3 class="page-title white-text teal">About</h3>
-      <div class="container flow-text">
-        <!-- <blockquote>
-          <h2>
-            A Software Developer with a passion for Backend Development and Artificial Intelligence.
-
-          </h2>
-        </blockquote> -->
-        <p>
-          	I am an Information Systems and Management student at Nuremberg Institute of Technology (TH Nürnberg) with a passion for problem-solving and coding. 
-		I always strive to bring 100% to every project I undertake. During my Bachelor’s studies, I gained hands-on experience with a wide range of 
-		technologies—including C#, Unity3D, VR gaming, Microsoft SQL Server, HTML5, CSS, Java, and C++ - which laid a strong foundation in both software development and system management.
-		With five years of professional experience as a student software engineer at DATEV eG, I have further honed my skills in C# and Microsoft SQL Server, contributing to high-quality, 
-		efficient software solutions. An exchange semester at Vancouver Island University broadened my perspective on international business and strategic management, 
-		enriching my academic and professional journey.
-		Currently, in my Master’s program, I am focusing my research and projects on cutting-edge innovations in Virtual Reality (VR) and Large Language Models (LLMs), 
-		aiming to develop complex applications that solve real-world problems and make a meaningful impact on millions of users.
-        </p>
-        <p>
-        <ul>
-          <li><b>Languages:</b> C#, C++, Python</li>
-          <li><b>Databases:</b>SQL, Neo4j</li>
-          <li><b>Tools & Technologies:</b>VisualStudio, Unity3D, LangChain, LangGraph, OpenAI, Azure DevOps Server, Git, Blender, Agil Work
-            (Scrum)</li>
-        </ul>
-
-        </p>
-
-        <p>
-          Looking for an opportunity to work in a challenging position combining my skills in Software Engineering,
-          which provides professional development, interesting experiences and personal growth.
-        </p>
-        <!-- <p>
-          Another Paragraph
-        </p>  -->
-        <!-- <p>
-        <strong>Current Focus</strong>:&nbsp;<a aria-label="Navigate to the Inclusive Design Patterns homepage"
-          href="https://www.smashingmagazine.com/inclusive-design-patterns/">Accessibility</a>&nbsp;//&nbsp;<a
-          aria-label="Navigate to the Full Stack React homepage"
-          href="https://www.fullstackreact.com/">React</a>&nbsp;//&nbsp;<a
-          aria-label='Navigate to the article "Scalable CSS"'
-          href="https://mrmrs.github.io/writing/2016/03/24/scalable-css/">Design Systems</a>
-        </p> -->
-      </div>
-    </section>
-
-
-    <!-- Third Section: Experience -->
-    <section id="experience" class="section scrollspy">
-      <h3 class="page-title white-text teal">Experience</h3>
-      <div class="container">
-
-        <!-- Latest Experience -->
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m2">
-                <a href="https://www.datev.de/" target="_blank"><img alt="datevLogo" src="/assets/img/datevLogo.jpg"
-                    class="responsive-img center-block" /></a>
-              </div>
-              <!-- <div class="col s12 m10"> -->
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="https://www.datev.de/" target="_blank"
-                      class="teal-text hoverline">DATEV eG</a></span>
-                </p>
-              </div>
-            </div>
-            <div class="role brown-text text-darken-2">Student Software Engineer</div>
-            <ul>
-              <li>
-                Worked with a variety of OnPremise tools to further develop a document management system
-              </li>
-              <li>
-                Developed and evaluated program statistic measuring points
-              </li>
-              <li>
-                Developed automatic integration tests
-              </li>
-
-              <li>Helped developing features into our productive software</li>
-              <li>
-                <b>Tools:</b> C#, Visual Studio, Mircosoft SQL Server
-              </li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <span>May 2020 - until now | Nürnberg, Germany</span>
-          </div>
-        </div>
-    </section>
-
-    <!-- 
-    <!-- Fourth Section: Projects -->
-    <section id="projects" class="section scrollspy">
-      <h3 class="page-title white-text teal">Projects</h3>
-      <div class="container">
-        <div class="row">
-
-          <!-- First Card: Bachelor thesis in VR -->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="BA Image" src="/assets/img/VideoBA.gif" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Exhibition hall in VR<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  Bachelor thesis about the development of an exhibition hall in Virtual Reality.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> Unity, VR-Headset, C#, XML, Blender</li>
-                  <li>Exhibition hall in virtual reality</li>
-                  <li>Compatible with multiple VR headsets</li>
-                  <li>Loads company data through XML-Files</li>
-                  <li>Scales the exhibition stands depending on the number of available XML files</li>
-                  <li>Displays videos, images, icons and text about companies</li>
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit " href="assets/Bachelorarbeit_JohannesKoller.pdf" target="_blank" data-position="top" data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- New Card: Your New Project -->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-               <!-- Video Karussell -->
-                <div class="carousel carousel-slider center">
-                  <div class="carousel-item" href="#one!">
-                    <video class="responsive-video" controls>
-                      <source src="/assets/videos/SILC_Chat1.mp4" type="video/mp4">
-                    </video>
-                  </div>
-                  <div class="carousel-item" href="#two!">
-                    <video class="responsive-video" controls>
-                      <source src="/assets/videos/SILC_Chat2.mp4" type="video/mp4">
-                    </video>
-                  </div>
-                  <div class="carousel-item" href="#three!">
-                    <video class="responsive-video" controls>
-                      <source src="/assets/videos/SILC_Chat3.mp4" type="video/mp4">
-                    </video>
-                  </div>
-                  <div class="carousel-item" href="#four!">
-                    <video class="responsive-video" controls>
-                      <source src="/assets/videos/SILC_Chat4.mp4" type="video/mp4">
-                    </video>
-                  </div>
-                </div>
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">LLM Copilot for SIEMENS<i class="mdi-navigation-more-vert right"></i></span>
-                <p>SILC, the LLM Copilot developed at the university for Siemens, processes requests in the field of logistics.</p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text"><small>Details</small><i class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> Neo4j, Langchain, OpenAi, Python</li>
-                  <li>Stores the data in a neo4j graph DB</li>
-                  <li>Uses langchain to automatically generate cypher queries</li>
-                  <li>Uses agents to get information through APIs</li>
-                  <li>Has chat history to make inquiries</li>
-                </ul>
-                <div class="card-action">
-                  <a href="URL-to-project-details-or-documentation" target="_blank" data-position="top" data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- New Card: Your New Project -->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-               <!-- Video Karussell -->
-                <div class="carousel carousel-slider center">
-                  <div class="carousel-item" href="#one!">
-                    <video class="responsive-video" controls>
-                      <source src="/assets/videos/Werwolve_demo.mp4" type="video/mp4">
-                    </video>
-                  </div>
-                </div>
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Werewolve mobile app<i class="mdi-navigation-more-vert right"></i></span>
-                <p>Developed an Android version of the game "Werewolf" and added features tailored to my friend group.</p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text"><small>Details</small><i class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> C#, Visual Studio, .NET MAUI, Android</li>
-                  <li>Extends the original app with personalized characters</li>
-                  <li>Additional gameplay features</li>
-                  <li>Get ready! New characters are coming your way before the next vacation! Stay tuned! 🌕🐺</li>
-                </ul>
-                <div class="card-action">
-                  <a href="https://github.com/jokouno/werewolve_code" target="_blank" data-position="top" data-tooltip="View coode online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-	<!-- Master thesis -->
-	<div class="col s12 m6 l4">
-	  <div class="card medium">
-	    <div class="card-image waves-effect waves-block waves-light">
-	      <!-- Video-Karussell -->
-	      <div class="carousel carousel-slider center">
-	        <div class="carousel-item" href="#one!">
-	          <iframe
-	            class="responsive-video"
-	            src="https://www.youtube.com/embed/OpaOCHzFQtI"
-	            frameborder="0"
-	            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-	            allowfullscreen>
-	          </iframe>
-	        </div>
-	      </div>
-	    </div>
-	    <div class="card-content">
-	      <span class="card-title activator teal-text hoverline">Master's thesis<i class="mdi-navigation-more-vert right"></i></span>
-	      <p>Automatic world creation with object retreival to create a 3D Unity scene with a text prompt.</p>
-	    </div>
-	    <div class="card-reveal">
-	      <span class="card-title grey-text"><small>Details</small><i class="mdi-navigation-close right"></i></span>
-	      <ul>
-	        <li><b>Tools:</b> Python, OpenAI, Unity3D, LangChain, Trellis, ComfyUI</li>
-		<li>Language based generation of virtual 3D Scenes</li>
-	        <li>Multi-Agent LLM Workflow to generate a 3D Scene json</li>
-	        <li>Object Retreival with Trellis to generate 3D Assets</li>
-	      </ul>
-	      <div class="card-action">
-	        <a href="https://youtu.be/OpaOCHzFQtI"
-	           target="_blank"
-	           data-position="top"
-	           data-tooltip="Video auf YouTube ansehen"
-	           class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped">
-	          <i class="fa fa-external-link"></i>
-	        </a>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-
-	<!-- AIVR Conference 2025 -->
-	<div class="col s12 m6 l4">
-	  <div class="card medium">
-	    <div class="card-image waves-effect waves-block waves-light">
-	      <!-- Bild-Karussell -->
-	      <div class="carousel carousel-slider center">
-	        <div class="carousel-item" href="#one!">
-	          <img class="responsive-img" src="/assets/img/Uni.jpg" alt="Bild 1">
-	        </div>
-	        <div class="carousel-item" href="#two!">
-	          <img class="responsive-img" src="/assets/img/Conference.jpg" alt="Bild 2">
-	        </div>
-	        <div class="carousel-item" href="#three!">
-	          <img class="responsive-img" src="/assets/img/Dinner.jpg" alt="Bild 3">
-	        </div>
-		<div class="carousel-item" href="#four!">
-	          <img class="responsive-img" src="/assets/img/Osaka_Castle.jpg" alt="Bild 4">
-	        </div>
-		<div class="carousel-item" href="#five!">
-		  <img class="responsive-img" src="/assets/img/Id.jpg" alt="Bild 5">
-	        </div>
-	        <!-- Weitere Bilder nach Bedarf -->
-	      </div>
-	    </div>
-	    <div class="card-content">
-	      <span class="card-title activator teal-text hoverline">AIVR2025-Conference
-	        <i class="mdi-navigation-more-vert right"></i>
-	      </span>
-	      <p>Published my Master's thesis at the AIVR conference 2025 in Osaka, Japan.</p>
-	    </div>
-	    <div class="card-reveal">
-	      <span class="card-title grey-text">
-	        <small>Details</small>
-	        <i class="mdi-navigation-close right"></i>
-	      </span>
-	      <ul>
-	        <li><b>Tools:</b> Python, OpenAI, Unity3D, LangChain, Trellis, ComfyUI</li>
-	        <li>Multi-Agent LLM Workflow to generate virtual 3D Scenes</li>
-	        <li>Published in Springer Nature: Springer Book Series Smart Innovation, System and Technologies (SIST)</li>
-	        <li>Recommended to be published in International Journal of Reasoning-based Intelligent Systems (ISSN online:1755-0564; ISSN print: 1755-0556)</li>
-	      </ul>
-	      <div class="card-action">
-	        <a href="https://aivr.org/"
-	           target="_blank"
-	           data-position="top"
-	           data-tooltip="Link to AIVR2025"
-	           class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped">
-	          <i class="fa fa-external-link"></i>
-	        </a>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-
-    
-        </div>
-      </div>
-        
-    </section>
-
-    <!-- Fifth Section: Skills -->
-    <section id="skills" class="section scrollspy">
-	  <h3 class="page-title white-text teal">Skills</h3>
+    <!-- ABOUT -->
+	<section id="aboutme" class="section">
 	  <div class="container">
+		<h2 class="section-title reveal">
+		  <span class="ghost">ABOUT ME</span>
+		  About me
+		</h2>
+
+		<div class="about-grid reveal">
+		  <!-- Left: animated headline + short intro -->
+		  <div class="card about-hero">
+			<div class="about-kicker">Hi, I’m Johannes Koller.</div>
+
+			<h3 class="about-headline">
+			  <span class="about-a">A</span>
+			  <span class="typing" id="typing"></span><span class="typing-caret" aria-hidden="true">▌</span>
+			</h3>
+
+			<div class="about-block">
+			  <p>
+				I am an Information Systems graduate from Nuremberg Institute of Technology (TH Nürnberg) with a passion for problem-solving and coding.
+				I always strive to bring 100% to every project I undertake. During my Bachelor’s studies, I gained hands-on experience with a wide range of technologies, including C#, Unity3D, VR gaming, Microsoft SQL Server, HTML5, CSS, Java and C++, which laid a strong foundation in both software development and system management.
+			  </p>
+			  <p>
+				With 5+ years of professional experience as a student software engineer at DATEV eG, I have further honed my skills in C# and Microsoft SQL Server, contributing to high-quality, efficient software solutions. An exchange semester at Vancouver Island University broadened my perspective on international business and strategic management, enriching my academic and professional journey.
+			  </p>
+			  <p style="margin-bottom:0;">
+				I recently completed my Master’s degree, with a strong focus on applied AI systems and Virtual Reality. My academic work centered on Large Language Models (LLMs) for automated 3D/VR scene generation, combining multi-agent pipelines, structured outputs and production-oriented evaluation, aiming to develop complex applications that solve real-world problems and make a meaningful impact on millions of users. 
+			  </p>
+			</div>
+
+			<div class="about-split">
+			  <div class="about-block">
+				<div class="about-label">Core skills</div>
+				<div class="chips">
+				  <span class="chip">C# / .NET</span>
+				  <span class="chip">Python</span>
+				  <span class="chip">Unity</span>
+				  <span class="chip">LLM Pipelines</span>
+				  <span class="chip">LangChain</span>
+				  <span class="chip">LangGraph</span>
+				  <span class="chip">LLM Agents</span>
+				  <span class="chip">SQL</span>
+				  <span class="chip">Evaluation</span>
+				</div>
+			  </div>
+
+			  <div class="about-block">
+				<div class="about-label">Looking for</div>
+				<p style="margin:0;">				  
+				  An opportunity to work in a challenging position combining my skills in Software Engineering, which provides professional development, interesting experiences and personal growth. 
+				</p>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</section>
 	
-	    <!-- Languages and Databases -->
-		<div class="card">
-			<div class="card-content">
-				<h4 class="brown-text light">Languages and Databases</h4>
-				<!-- Flexbox-Container -->
-				<div class="row"
-				     style="display: flex; 
-					    flex-wrap: wrap; 
-					    justify-content: center; 
-					    align-items: center;">
-				  <div style="margin: 10px;">
-				    <img alt="CSharp" src="/assets/img/CSharp.png" class="responsive-img" style="max-width: 80px;" />
+	<!-- Ticker / Marquee - Allgemein -->
+	<section class="ticker" aria-label="Skills ticker">
+	  <div class="ticker__mask">
+		<div class="ticker__track" role="list">
+		  <!-- Set 1 -->
+		  <div class="ticker__set" aria-hidden="false">
+			<span class="chip">Applied AI Systems</span>
+			<span class="sep">•</span>
+			<span class="chip">End-to-End AI Pipelines</span>
+			<span class="sep">•</span>
+			<span class="chip">LLM Integration & Orchestration</span>
+			<span class="sep">•</span>
+			<span class="chip">Multi-Agent Workflows</span>
+			<span class="sep">•</span>
+			<span class="chip">Retrieval-Augmented Generation (RAG)</span>
+			<span class="sep">•</span>
+			<span class="chip">Structured Output Validation</span>
+			<span class="sep">•</span>
+			<span class="chip">Hallucination Control</span>
+			<span class="sep">•</span>
+			<span class="chip">Production-Grade AI Systems</span>
+			<span class="sep">•</span>
+			<span class="chip">Software Architecture & Design Patterns</span>
+			<span class="sep">•</span>
+			<span class="chip">Clean Code & Maintainable Systems</span>
+		  </div>
+
+		  <div class="ticker__set" aria-hidden="true">
+			<span class="sep">•</span>
+			<span class="chip">Applied AI Systems</span>
+			<span class="sep">•</span>
+			<span class="chip">End-to-End AI Pipelines</span>
+			<span class="sep">•</span>
+			<span class="chip">LLM Integration & Orchestration</span>
+			<span class="sep">•</span>
+			<span class="chip">Multi-Agent Workflows</span>
+			<span class="sep">•</span>
+			<span class="chip">Retrieval-Augmented Generation (RAG)</span>
+			<span class="sep">•</span>
+			<span class="chip">Structured Output Validation</span>
+			<span class="sep">•</span>
+			<span class="chip">Hallucination Control</span>
+			<span class="sep">•</span>
+			<span class="chip">Production-Grade AI Systems</span>
+			<span class="sep">•</span>
+			<span class="chip">Software Architecture & Design Patterns</span>
+			<span class="sep">•</span>
+			<span class="chip">Clean Code & Maintainable Systems</span>
+		  </div>
+		</div>
+	  </div>
+	</section>
+
+    <!-- EXPERIENCE -->
+	<section id="experience" class="section work">
+	  <div class="container">
+		<h2 class="section-title reveal">
+		  <span class="ghost">WORK</span>
+		  Work Experience
+		</h2>
+
+		<div class="work-timeline">
+
+		  <!-- ITEM 1 -->
+		  <article class="work-item reveal" style="--accent: rgba(49,130,206,.95); --accentSoft: rgba(49,130,206,.25);">
+			<div class="work-year">2025</div>
+			<span class="year-connector" aria-hidden="true"></span>
+
+			<div class="work-card">
+			  <div class="work-left">
+				<div class="work-logo" aria-hidden="true">
+					<img src="/assets/img/datevLogo.jpg" alt="D" />
 				  </div>
-				  <div style="margin: 10px;">
-				    <img alt="C++" src="/assets/img/C++.png" class="responsive-img" style="max-width: 80px;" />
+
+				  <div class="work-head">
+					<div class="work-company">DATEV eG</div>
+					<div class="work-role">Working Student · Software Engineering</div>
+					<div class="work-dates">May 2020 – Present</div>
 				  </div>
-				  <div style="margin: 10px;">
-				    <img alt="Python" src="/assets/img/python-logo.png" class="responsive-img" style="max-width: 80px;" />
+			  </div>
+
+			  <div class="work-right">
+				<ul class="work-bullets">
+				  <li>Designed and maintained C#-based components for a large-scale enterprise document management system in productive use</li>
+				  <li>Developed statistical measurement and monitoring points (+30%) to support data-driven optimization of system behavior</li>
+				  <li>Designed and implemented automated integration tests to ensure reliability and regression safety in complex software environments</li>
+				  <li>Collaborated in agile teams with a strong focus on maintainability, documentation and long-term system evolution</li>
+				</ul>
+
+				<div class="work-chips" aria-label="Skills">
+				  <span class="work-chip">C#</span>
+				  <span class="work-chip">.NET</span>
+				  <span class="work-chip">SQL</span>
+				  <span class="work-chip">Integration Tests</span>
+				  <span class="work-chip">Monitoring</span>
+				</div>
+			  </div>
+			</div>
+		  </article>
+
+		</div>
+	  </div>
+	</section>
+	
+	<!-- Ticker / Marquee - Skills -->
+	<section class="ticker" aria-label="Skills ticker">
+	  <div class="ticker__mask">
+		<div class="ticker__track" role="list">
+		  <!-- Set 1 -->
+		  <div class="ticker__set" aria-hidden="false">
+			<span class="chip">C# / .NET</span>
+			<span class="sep">•</span>
+			<span class="chip">Python</span>
+			<span class="sep">•</span>
+			<span class="chip">SQL</span>
+			<span class="sep">•</span>
+			<span class="chip">C++</span>
+			<span class="sep">•</span>
+			<span class="chip">LangChain</span>
+			<span class="sep">•</span>
+			<span class="chip">OpenAI APIs</span>
+			<span class="sep">•</span>
+			<span class="chip">Unity3D</span>
+			<span class="sep">•</span>
+			<span class="chip">System Design</span>
+			<span class="sep">•</span>
+			<span class="chip">Integration Testing</span>
+			<span class="sep">•</span>
+			<span class="chip">CI/CD</span>
+		  </div>
+
+		  <div class="ticker__set" aria-hidden="true">
+			<span class="sep">•</span>
+			<span class="chip">C# / .NET</span>
+			<span class="sep">•</span>
+			<span class="chip">Python</span>
+			<span class="sep">•</span>
+			<span class="chip">SQL</span>
+			<span class="sep">•</span>
+			<span class="chip">C++</span>
+			<span class="sep">•</span>
+			<span class="chip">LangChain</span>
+			<span class="sep">•</span>
+			<span class="chip">OpenAI APIs</span>
+			<span class="sep">•</span>
+			<span class="chip">Unity3D</span>
+			<span class="sep">•</span>
+			<span class="chip">System Design</span>
+			<span class="sep">•</span>
+			<span class="chip">Integration Testing</span>
+			<span class="sep">•</span>
+			<span class="chip">CI/CD</span>
+		  </div>
+		</div>
+	  </div>
+	</section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">
+          <span class="ghost">PROJECTS</span>
+          Projects
+        </h2>
+
+        <div class="projects-grid">
+		
+			<!-- 1) AIVR2025 Conference (image carousel) -->
+			<div class="card reveal project-card">
+			  <div class="project-media">
+				<div class="project-carousel" data-carousel>
+				  <div class="slide is-active">
+					<img src="/assets/img/Uni.jpg" alt="AIVR trip photo 1" loading="lazy" />
 				  </div>
-				  <div style="margin: 10px;">
-				    <img alt="Microsoft SQL Server" src="/assets/img/Sql_logo.png" class="responsive-img" style="max-width: 80px;" />
+				  <div class="slide">
+					<img src="/assets/img/Conference.jpg" alt="AIVR trip photo 2" loading="lazy" />
 				  </div>
-				  <div style="margin: 10px;">
-				    <img alt="Neo4j" src="/assets/img/Neo4j-logo.png" class="responsive-img" style="max-width: 80px;" />
+				  <div class="slide">
+					<img src="/assets/img/Dinner.jpg" alt="AIVR trip photo 3" loading="lazy" />
+				  </div>
+				  <div class="slide">
+					<img src="/assets/img/Osaka_Castle.jpg" alt="AIVR trip photo 4" loading="lazy" />
+				  </div>
+				  <div class="slide">
+					<img src="/assets/img/Id.jpg" alt="AIVR trip photo 5" loading="lazy" />
+				  </div>
+
+				  <div class="nav">
+					<button type="button" data-prev>Prev</button>
+					<button type="button" data-next>Next</button>
 				  </div>
 				</div>
-			</div>
-		</div>
-        
-	        <!-- Other -->
-	        <div class="card">
-			  <div class="card-content">
-				    <h4 class="brown-text light">Other</h4>
-				
-				    <!-- Flexbox-Container -->
-				    <div class="row"
-				         style="display: flex; 
-				                flex-wrap: wrap; 
-				                align-items: center; 
-				                justify-content: center;">
-				      
-				      <div style="margin: 10px;">
-				        <img alt="Visual Studio" 
-				             src="/assets/img/Visual-Studio-Logo.png" 
-				             class="responsive-img" 
-				             style="max-width: 80px;" />
-				      </div>
-				
-				      <div style="margin: 10px;">
-				        <img alt="Unity" 
-				             src="/assets/img/unity-new-20212110.jpg" 
-				             class="responsive-img" 
-				             style="max-width: 80px;" />
-				      </div>
-				
-				      <div style="margin: 10px;">
-				        <img alt="LangChain" 
-				             src="/assets/img/langchain-logo.png" 
-				             class="responsive-img"
-				             style="max-width: 80px;" />
-				      </div>
-				
-				      <div style="margin: 10px;">
-				        <img alt="LangGraph" 
-				             src="/assets/img/langgraph-logo.png" 
-				             class="responsive-img"
-				             style="max-width: 80px;" />
-				      </div>
-				
-				      <div style="margin: 10px;">
-				        <img alt="OpenAI" 
-				             src="/assets/img/OpenAI_Logo.png" 
-				             class="responsive-img"
-				             style="max-width: 80px;" />
-				      </div>
-				
-				      <div style="margin: 10px;">
-				        <img alt="Git" 
-				             src="/assets/img/Git-logo.png" 
-				             class="responsive-img"
-				             style="max-width: 80px;" />
-				      </div>
-				
-				      <div style="margin: 10px;">
-				        <img alt="Azure DevOps" 
-				             src="/assets/img/azure_devops-1.png" 
-				             class="responsive-img"
-				             style="max-width: 80px;" />
-				      </div>
-				
-				      <div style="margin: 10px;">
-				        <img alt="Blender" 
-				             src="/assets/img/Logo_Blender.svg.png" 
-				             class="responsive-img"
-				             style="max-width: 80px;" />
-				      </div>
-				
-				      <div style="margin: 10px;">
-				        <img alt="Agil" 
-				             src="/assets/img/agilWork.png" 
-				             class="responsive-img"
-				             style="max-width: 80px;" />
-				      </div>
-				      
-				    </div>
 			  </div>
-		</div>
 
-        <!-- certifications -->
-        <!-- <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Certificates</h4>
-            <div class="row text-left">
-              <div class="container">
-                <div class="row">
-                  <div class="col s12 m6 l6">
-                    <div class="card">
-                      <div class="card-image">
-                        <img src="/assets/img/mooc-machine-learning-coursera-800x500.jpg">
-                      </div>
-                      <div class="card-content">
-                        <span class="card-title teal-text">Machine Learning (Stanford)</span>
-                      </div>
-                    </div>
-                  </div>
+			  <div class="project-content">
+				<div class="banner">Paper</div>
+				<h3>AIVR2025 Conference</h3>
+				<div class="chips">
+				  <span class="chip">AI</span><span class="chip">Publication</span><span class="chip">Peer-reviewed</span><span class="chip">Springer</span><span class="chip">VR</span><span class="chip">LangChain</span>
+				</div>
+				
+				<div class="project-text">
+					<p>
+					  Presented and published my research on fully automated VR scene building at AIVR 2025 (Osaka). The work demonstrates an engineering-first approach to LLM pipelines: structured scene specifications, multi-agent orchestration and evaluation-driven iteration to make generative systems reliable and reproducible.
+					</p>
+				</div>
+				
+				<div class="project-cta">
+				  <a class="project-action" href="https://link.springer.com/chapter/10.1007/978-3-032-10951-4_17" target="_blank" rel="noopener noreferrer">
+					Paper
+				  </a>
+				  <a class="project-action" href="https://aivr.org/" target="_blank" rel="noopener noreferrer">
+					AIVR website
+				  </a>
+				</div>
+			  </div>
+			</div>
 
-                  <div class="col s12 m6 l6">
-                    <div class="card">
-                      <div class="card-image">
-                        <img src="/assets/img/mooc-algorithms-stanford-2-800x500.jpg">
-                      </div>
-                      <div class="card-content">
-                        <span class="card-title teal-text">Algorithms (Stanford)</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
+			<!-- 2) LLM Copilot for SIEMENS (4 videos carousel) -->
+			<div class="card reveal project-card">
+			  <div class="project-media">
+				<div class="project-carousel" data-carousel>
+				  <div class="slide is-active">
+					<video src="/assets/videos/SILC_Chat1.mp4" controls playsinline></video>
+				  </div>
+				  <div class="slide">
+					<video src="/assets/videos/SILC_Chat2.mp4" controls playsinline></video>
+				  </div>
+				  <div class="slide">
+					<video src="/assets/videos/SILC_Chat3.mp4" controls playsinline></video>
+				  </div>
+				  <div class="slide">
+					<video src="/assets/videos/SILC_Chat4.mp4" controls playsinline></video>
+				  </div>
 
+				  <div class="nav">
+					<button type="button" data-prev>Prev</button>
+					<button type="button" data-next>Next</button>
+				  </div>
+				</div>
+			  </div>
+
+			  <div class="project-content">
+				<div class="banner">LLM Copilot</div>
+				<h3>LLM Copilot for SIEMENS</h3>
+				<div class="chips">
+				  <span class="chip">AI</span><span class="chip">Neo4j</span><span class="chip">LangChain</span><span class="chip">OpenAI</span><span class="chip">Python</span><span class="chip">Agents</span><span class="chip">Enterprise</span>
+				</div>
+				
+				<div class="project-text">
+					<p>
+					  Built a logistics-focused LLM copilot that turns natural-language requests into auditable answers by combining tool-using agents with a Neo4j knowledge graph. Emphasis was on enterprise readiness: robust prompt-to-query generation, controlled retrieval and interaction patterns that support follow-up questions without losing context.
+					</p>
+				</div>
+
+				<div class="project-cta">
+				  <a class="project-action" href="URL-to-project-details-or-documentation" target="_blank" rel="noopener noreferrer">
+					View project
+				  </a>
+				</div>
+			  </div>
+			</div>
+
+			<!-- 3) Werewolve mobile app (single video) -->
+			<div class="card reveal project-card">
+			  <div class="project-media">
+				<video src="/assets/videos/Werwolve_demo.mp4" controls playsinline></video>
+			  </div>
+
+			  <div class="project-content">
+				<div class="banner">Mobile App</div>
+				<h3>Werewolve mobile app</h3>
+				<div class="chips">
+				  <span class="chip">.NET MAUI</span><span class="chip">C#</span><span class="chip">Android</span><span class="chip">State</span><span class="chip">UX</span>
+				</div>
+				
+				<div class="project-text">
+					<p>
+					  Developed a cross-platform companion app for “Werewolf” with a clean game-state model, configurable roles and fast iteration on UX. This project highlights product-minded engineering: shipping a stable experience, designing extensibility for new roles and keeping the codebase maintainable as features grow.
+					</p>
+				</div>
+
+				<div class="project-cta">
+				  <a class="project-action" href="https://github.com/jokouno/werewolve_code" target="_blank" rel="noopener noreferrer">
+					View code
+				  </a>
+				</div>
+			  </div>
+			</div>
+
+			<!-- 4) Master's thesis (YouTube embed) -->
+			<div class="card reveal project-card">
+			  <div class="project-media">
+				<iframe
+				  src="https://www.youtube.com/embed/OpaOCHzFQtI"
+				  title="Master's thesis demo"
+				  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				  allowfullscreen>
+				</iframe>
+			  </div>
+
+			  <div class="project-content">
+				<div class="banner">Master Thesis</div>
+				<h3>Automated 3D/VR Scene Generation</h3>
+				<div class="chips">
+				  <span class="chip">AI</span><span class="chip">LLM Pipeline</span><span class="chip">Unity</span><span class="chip">Structured Output</span><span class="chip">Trellis</span><span class="chip">Evaluation</span>
+				</div>
+				
+				<div class="project-text">
+					<p>
+					  Designed an end-to-end system that converts text specifications into complete Unity scenes via multi-agent planning, structured scene schemas and automated validation. The focus is reliability: measurable quality signals, iterative correction loops and a production-oriented architecture that scales beyond demos.
+					</p>
+				</div>
+
+				<div class="project-cta">
+				  <a class="project-action" href="https://youtu.be/OpaOCHzFQtI" target="_blank" rel="noopener noreferrer">
+					Watch on YouTube
+				  </a>
+				</div>
+			  </div>
+			</div>
+
+			<!-- 5) Exhibition hall in VR (Bachelor thesis) -->
+			<div class="card reveal project-card">
+			  <div class="project-media">
+				<img src="/assets/img/VideoBA.gif" alt="Exhibition hall in VR preview" loading="lazy" />
+			  </div>
+
+			  <div class="project-content">
+				<div class="banner">Bachelor Thesis</div>
+				<h3>Exhibition hall in VR</h3>
+				<div class="chips">
+				  <span class="chip">Unity</span><span class="chip">VR</span><span class="chip">C#</span><span class="chip">XML</span><span class="chip">Blender</span>
+				</div>
+				
+				<div class="project-text">
+					<p>
+					  Implemented a VR exhibition hall that dynamically renders company booths from structured XML data, including media content (videos, images, icons) and scalable layouts. The project demonstrates strong fundamentals in 3D engineering, data-driven content pipelines and delivering interactive experiences across VR devices.
+					</p>
+				</div>
+
+				<div class="project-cta">
+				  <a class="project-action" href="assets/Bachelorarbeit_JohannesKoller.pdf" target="_blank" rel="noopener noreferrer">
+					View PDF
+				  </a>
+				</div>
+			  </div>
+			</div>
+
+
+			
+		  
+        </div>
       </div>
     </section>
+	
+	
+	<!-- Ticker / Marquee - Hobbies -->
+	<section class="ticker" aria-label="Skills ticker">
+	  <div class="ticker__mask">
+		<div class="ticker__track" role="list">
+		  <!-- Set 1 -->
+		  <div class="ticker__set" aria-hidden="false">
+			<span class="chip">American Football</span>
+			<span class="sep">•</span>
+			<span class="chip">Soccer (2. Bundesliga)</span>
+			<span class="sep">•</span>
+			<span class="chip">Gym & Strength Training</span>
+			<span class="sep">•</span>
+			<span class="chip">Technology & Systems</span>
+			<span class="sep">•</span>
+			<span class="chip">Cooking</span>
+			<span class="sep">•</span>
+			<span class="chip">Gaming</span>
+			<span class="sep">•</span>
+			<span class="chip">Reading</span>
+		  </div>
 
-    <!-- Seventh Section: Education -->
-    <section id="education" class="section scrollspy">
-      <h3 class="page-title white-text teal">Education</h3>
+		  <div class="ticker__set" aria-hidden="true">
+			<span class="sep">•</span>
+			<span class="chip">American Football</span>
+			<span class="sep">•</span>
+			<span class="chip">Soccer (2. Bundesliga)</span>
+			<span class="sep">•</span>
+			<span class="chip">Gym & Strength Training</span>
+			<span class="sep">•</span>
+			<span class="chip">Technology & Systems</span>
+			<span class="sep">•</span>
+			<span class="chip">Cooking</span>
+			<span class="sep">•</span>
+			<span class="chip">Gaming</span>
+			<span class="sep">•</span>
+			<span class="chip">Reading</span>
+		  </div>
+		</div>
+	  </div>
+	</section>
+	
+	
+	<!-- EDUCATION -->
+	<section id="education" class="section">
+	  <div class="container">
+		<h2 class="section-title reveal">
+		  <span class="ghost">EDUCATION</span>
+		  Education
+		</h2>
+
+		<div class="grid one">
+		  <!-- 1) Master (TH Nürnberg) -->
+		  <div class="card reveal">
+			<div class="edu-head">
+			  <div class="edu-right">
+				<div class="banner">M.Sc.</div>
+				<div class="edu-period-right">Oct 2023 – Mar 2026</div>
+			  </div>
+			</div>
+
+			<h3>
+			  <a href="https://www.th-nuernberg.de/"
+				 target="_blank"
+				 rel="noopener"
+				 class="edu-link">
+				Nuremberg Institute of Technology (TH Nürnberg)
+			  </a>
+			</h3>
+
+			<div class="meta">
+			  Nürnberg, Germany · Master of Science in Information Systems and Management
+			</div>
+
+			<div class="edu-kv">
+			  <div><b>Current grade:</b> 1,2</div>
+			</div>
+
+			<p style="margin-top:12px; color: rgba(233,235,239,.78); line-height:1.7;">
+			  Specialized in applied AI and production-oriented software engineering, with a focus on designing reliable end-to-end systems.
+			  Strong foundation in information systems, security and strategic IT management, bridging technical depth with business impact and
+			  measurable quality standards. Completion date: 31.03.2026 (waiting for my master thesis grade).
+			</p>
+
+			<details class="project-details edu-details">
+			  <summary>Relevant coursework</summary>
+			  <div class="details-body">
+				<ul>
+				  <li>Intercultural Communication: 1,0</li>
+				  <li>Strategic IT Management: 1,3</li>
+				  <li>Logistical Information Systems: 1,7</li>
+				  <li>Information Security Seminar: 1,0</li>
+				  <li>Large Language Models: 1,3</li>
+				</ul>
+			  </div>
+			</details>
+
+			<div class="chips" aria-label="Focus areas">
+			  <span class="chip">Applied AI</span>
+			  <span class="chip">LLMs</span>
+			  <span class="chip">Information Systems</span>
+			  <span class="chip">Security</span>
+			</div>
+		  </div>
+
+		  <!-- 2) VIU (Semester abroad / MBA) -->
+		  <div class="card reveal">
+			<div class="edu-head">
+			  <div class="edu-right">
+				<div class="banner">MBA</div>
+				<div class="edu-period-right">Sep 2024 – Dec 2024</div>
+			  </div>
+			</div>
+
+			<h3>
+			  <a href="https://www.viu.ca/"
+				 target="_blank"
+				 rel="noopener"
+				 class="edu-link">
+				Vancouver Island University
+			  </a>
+			  <span style="opacity:.7; font-weight:400; font-size:.92em;">(Semester abroad)</span>
+			</h3>
+
+			<div class="meta">
+			  Nanaimo, BC, Canada · Master of Business Administration
+			</div>
+
+			<div class="edu-kv">
+			  <div><b>Final grade:</b> 1,3</div>
+			</div>
+
+			<p style="margin-top:12px; color: rgba(233,235,239,.78); line-height:1.7;">
+			  International semester abroad in Canada with a strong focus on decision-making in finance, operations and strategy.
+			  Developed a pragmatic business perspective that complements engineering work, useful for translating technical solutions into clear
+			  stakeholder value in cross-functional and international settings.
+			</p>
+
+			<details class="project-details edu-details">
+			  <summary>Relevant coursework</summary>
+			  <div class="details-body">
+				<ul>
+				  <li>Accounting 3: Financial Decision Making: 1,3</li>
+				  <li>Management 4: Operations Management: 1,3</li>
+				  <li>Finance 3: Investment Management and Markets: 1,3</li>
+				  <li>Technology 4: Emerging Business Technology: 1,3</li>
+				</ul>
+			  </div>
+			</details>
+
+			<div class="chips" aria-label="Focus areas">
+			  <span class="chip">Finance</span>
+			  <span class="chip">Operations</span>
+			  <span class="chip">Strategy</span>
+			  <span class="chip">Emerging Tech</span>
+			</div>
+		  </div>
+
+		  <!-- 3) Bachelor (TH Nürnberg) -->
+		  <div class="card reveal">
+			<div class="edu-head">
+			  <div class="edu-right">
+				<div class="banner">B.Sc.</div>
+				<div class="edu-period-right">Oct 2019 – Feb 2023</div>
+			  </div>
+			</div>
+
+			<h3>
+			  <a href="https://www.th-nuernberg.de/"
+				 target="_blank"
+				 rel="noopener"
+				 class="edu-link">
+				Nuremberg Institute of Technology (TH Nürnberg)
+			  </a>
+			</h3>
+
+			<div class="meta">
+			  Nürnberg, Germany · Bachelor of Science in Information Systems and Management
+			</div>
+
+			<div class="edu-kv">
+			  <div><b>Final grade:</b> 1,8</div>
+			</div>
+
+			<p style="margin-top:12px; color: rgba(233,235,239,.78); line-height:1.7;">
+			  Built strong fundamentals in computer science and software engineering, algorithms, databases, operating systems and requirements.
+			  Applied this knowledge in practical projects and an internship, demonstrating hands-on implementation skills, ownership and the ability
+			  to deliver structured, maintainable solutions.
+			</p>
+
+			<details class="project-details edu-details">
+			  <summary>Relevant coursework</summary>
+			  <div class="details-body">
+				<ul>
+				  <li>Data Structures and Algorithms: 1,0</li>
+				  <li>Database Management Systems: 1,3</li>
+				  <li>Operating Systems and Computer Architecture: 1,0</li>
+				  <li>Information security: 1,3</li>
+				  <li>Supply Chain Management: 1,7</li>
+				  <li>Requirements engineering: 1,0</li>
+				  <li>5 month internship at DATEV eG: passed</li>
+				  <li>12 month IT project about a data migration: 1,0</li>
+				</ul>
+			  </div>
+			</details>
+
+			<div class="chips" aria-label="Focus areas">
+			  <span class="chip">Algorithms</span>
+			  <span class="chip">Databases</span>
+			  <span class="chip">Systems</span>
+			  <span class="chip">Requirements</span>
+			  <span class="chip">Security</span>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</section>
+
+
+	
+
+    <!-- CONSOLE -->
+	<section id="console" class="section">
+	  <div class="container">
+		<h2 class="section-title reveal">
+		  <span class="ghost">TERMINAL</span>
+		  Interactive Console
+		</h2>
+
+		<div class="terminal reveal" role="region" aria-label="Interactive console">
+		  <div class="terminal-head">
+			<div class="dots" aria-hidden="true">
+			  <span class="d r"></span><span class="d y"></span><span class="d g"></span>
+			</div>
+			<div class="terminal-title">johannes@vsc ~ $</div>
+			<div style="width:64px;"></div>
+		  </div>
+
+		  <div class="terminal-body" id="term">
+			<div><span class="prompt">λ</span> <span class="path">~/johannes</span> <span class="cmd">whoami</span></div>
+			<div class="result">Johannes Koller, Applied AI Engineer, LLMs, VR Systems</div>
+
+			<div><span class="prompt">λ</span> <span class="path">~/johannes</span> <span class="cmd">cat skills.json | jq</span></div>
+			<div class="result"><pre>
+	{
+	  "Programming": ["C#", "Python", "SQL", "C++"],
+	  "Applied AI": ["LLMs", "RAG Pipelines", "Agents", "LangChain", "Evaluation & Validation"],
+	  "VR/3D": ["Unity", "Procedural Scene Generation", "3D Asset Pipelines"],
+	  "Engineering": ["Structured Outputs", "System Design", "CI / Integration Testing"]
+	}</pre></div>
+
+			<div><span class="prompt">λ</span> <span class="path">~/johannes</span> <span class="cmd">ls -la education/</span></div>
+			<div class="result"><pre>
+	-rw-r--r--	1	johannes	staff	189	Feb 22 15:01	M.S._Information_Systems.md
+	-rw-r--r--	1	johannes	staff	234	Feb 22 15:01	B.S._Information_Systems.md
+	drwxr-xr-x  8	johannes	staff	251	Feb 22 15:01	study_abroad_canada/</pre></div>
+
+			<div><span class="prompt">λ</span> <span class="path">~/johannes</span> <span class="cmd">cat education/M.S._Information_Systems.md</span></div>
+			<div class="result"><pre>
+	M.Sc. Information Systems - Nuremberg Institute of Technology
+	Focus: Applied AI (LLMs), Software Systems
+	Study Abroad: Vancouver Island University (Canada)
+	Final Grade: 1.3</pre></div>
+
+			<div><span class="prompt">λ</span> <span class="path">~/johannes</span> <span class="cmd">cat experience.json | jq</span></div>
+			<div class="result"><pre>
+	{
+	  "DATEV eG": {
+		"role": "Software Engineer (Working Student)",
+		"period": "2020–Present",
+		"focus": [
+		  "Enterprise Systems",
+		  "C# Components",
+		  "Monitoring",
+		  "Integration Testing"
+		]
+	  }
+	}</pre></div>
+
+			<div><span class="prompt">λ</span> <span class="path">~/johannes</span> <span class="cmd">cat research.log</span></div>
+			<div class="result"><pre>
+	One Prompt, Many Polygons (2025)
+	- Multi-agent LLM workflow for automated 3D scene generation
+	- Structured output validation & hallucination control
+	- 320 generated scenes, factorial 2×2×2×2 design
+	- Metrics: IBS, CFS, VCIS, NCIS
+	- Accepted @ AIVR, published by Springer</pre></div>
+
+			<div><span class="prompt">λ</span> <span class="path">~/johannes</span> <span class="cmd">echo "I build AI systems, not prototypes."</span></div>
+			<div class="result"><pre>I build AI systems, not prototypes.</pre></div>
+
+			<div><span class="prompt">λ</span> <span class="path">~/johannes</span> <span class="cmd">contact --format=pretty</span></div>
+			<div class="result"><pre>
+	┌────────────────────────────────────────────────────────────┐
+	│ Email    : jkoller2@t-online.de									  		│
+	│ Website  : cv.johanneskoller.de         							│
+	│ GitHub   : github.com/jokouno             						│
+	│ LinkedIn : linkedin.com/in/johannes-koller-39b015217/	│
+	└────────────────────────────────────────────────────────────┘</pre></div>
+
+			<div><span class="prompt">λ</span> <span class="path">~/johannes</span> <span class="cmd">neofetch</span></div>
+			<div class="result"><pre>
+	OS: Applied AI Engineer
+	Host: Personal Portfolio
+	Kernel: LLMs + Software Engineering
+	Uptime: 5+ years enterprise engineering
+	Packages: C#, Python, SQL, Unity, LangChain
+	DE: AI Systems
+	WM: Multi-Agent Workflows
+	Resolution: Production-Ready
+	Memory: Structured Outputs only</pre></div>
+		  </div>
+		</div>
+	  </div>
+	</section>
+
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
       <div class="container">
-        <div class="row">
-          <div class="col s12 m6 l6">
+        <h2 class="section-title reveal">
+          <span class="ghost">CONTACT</span>
+          Contact
+        </h2>
 
-           <!-- THN Master WIN first -->
-            <div class="card">
-              <div class="card-content">
-			  <p>
-                  <span class="card-title"><a
-                      href="https://www.th-nuernberg.de/"
-                      target="_blank" class="teal-text hoverline">Nuremberg Institute of Technology (TH Nürnberg)</a></span>
-                </p>
-                <p class="brown-text">Nürnberg, Germany</p>
-                <p>
-                  <b>Degree: </b>Master of Science in Information Systems and Management<br>
-                  <b>Current grade: </b>1,2<br>
-                  <b>Estimated completion date: </b>01.09.2025
-                </p>
-                
-                <ul>
-		  <p>
-			<b>Relevant Courseworks:</b>
-		  <ul>
-			<li>Intercultural Communication - 1,0</li>
-			<li>Strategic IT Management - 1,3</li>
-			<li>Logistical Information Systems - 1,7</li>
-			<li>Information Security Seminar - 1,0</li>
-			<li>Large Language Models - 1,3</li>
-		  </ul>
-		  </p>
-				  
-                </ul>
-              </div>
+        <div class="grid two">
+          <div class="card reveal">
+            <h3>Let’s build</h3>
+            <div class="meta">AI systems · Software engineering · production pipelines</div>
+            <p>
+              If you are looking for a software engineer who combines strong engineering fundamentals with a passion for applied AI and continuous growth, I would be glad to connect.
+            </p>
+            <div class="chips">
+              <span class="chip">AI Engineering</span>
+              <span class="chip">Python</span>
+              <span class="chip">.NET</span>
+              <span class="chip">Research</span>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <h3>Links</h3>
+            <p style="margin-bottom:12px; color:rgba(233,235,239,.75);">
+              Ways to connect and learn more about my work:
+            </p>
+            <div class="chips">
+              <a class="chip" href="mailto:JKoller2@t-online.de">JKoller2@t-online.de</a>
+              <a class="chip" href="https://www.linkedin.com/in/johannes-koller-39b015217/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a class="chip" href="https://github.com/jokouno" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a class="chip" href="https://drive.google.com/drive/folders/12stpTKdHP1E7Zqz3ZOGycQ0V4PJujzLG?hl=de" target="_blank" rel="noopener noreferrer">Resume PDF</a>
             </div>
 
+            <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap;">
+              <button class="btn secondary" id="copyEmail" type="button" aria-label="Copy email">
+                <span class="dot" aria-hidden="true" style="background:rgba(49,130,206,.95); box-shadow:0 0 12px rgba(49,130,206,.45)"></span>
+                copy email
+              </button>
+              <a class="btn" href="#home" aria-label="Back to top">
+                <span class="dot" aria-hidden="true"></span>
+                top
+              </a>
+            </div>
 
-
-            <!-- VIU Second -->
-            <div class="card">
-              <div class="card-content">
-                <p>
-                  <span class="card-title"><a
-                      href="https://www.viu.ca/"
-                      target="_blank" class="teal-text hoverline">Vancouver Island University (semester abroad)</a></span>
-                </p>
-                <p class="brown-text">Nanaimo, BC, Canada</p>
-                <p>
-                  <b>Degree: </b>Master of Business Administration
-                  <br>
-                  <b>Final grade: </b>1,3
-                </p>
-
-                <ul>
-                  <p>
-                    <b>Relevant Courseworks:</b>
-                  <ul>
-                    <li>Accounting 3: Financial Decision Making - 1,3</li>
-                    <li>Management 4: Operations Management - 1,3</li>
-                    <li>Finance 3: Investment Management and Markets - 1,3</li>
-                    <li>Technology 4: Emerging Business Technology - 1,3</li>
-                  </ul>
-                  </p>
-
-                </ul>
-              </div>
-            </div>          
-
-            <!-- bachelor third -->
-            <div class="card">
-              <div class="card-content">
-                <p>
-                  <span class="card-title"><a
-                      href="https://www.th-nuernberg.de/"
-                      target="_blank" class="teal-text hoverline">Nuremberg Institute of Technology (TH Nürnberg)</a></span>
-                </p>
-                <p class="brown-text">Nürnberg, Germany</p>
-                <p>
-                  <b>Degree: </b>Bachelor of Science in Information Systems and Management
-                  <br>
-                  <b>Final grade: </b>1,8
-                </p>
-
-                <ul>
-                  <p>
-                    <b>Relevant Courseworks:</b>
-                  <ul>
-                    <li>Data Structures and Algorithms - 1,0</li>
-                    <li>Database Management Systems - 1,3</li>
-                    <li>Operating Systems and Computer Architecture - 1,0</li>
-                    <li>Information security - 1,3</li>
-                    <li>Supply Chain Management - 1,7</li>
-                    <li>Requirements engineering - 1,0</li>
-                    <li>5 month internship at DATEV eG - passed</li>
-                    <li>12 month it project about a data migration - 1,0</li>
-                  </ul>
-                  </p>
-
-                </ul>
-              </div>
-            </div>          
-            
+            <div id="copyToast" style="display:none; margin-top:12px; font-family:var(--mono); color:rgba(157,255,183,.95);">
+              copied: JKoller2@t-online.de
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Eight Section: Contact -->
-    <section id="contact" class="section scrollspy full-height">
-      <h3 class="page-title white-text teal">Contact</h3>
+    <footer>
       <div class="container">
-        <p>
-          <a aria-label="Email Johannes" href="mailto:JKoller2@t-online.de" target="_blank" data-position="top"
-            data-tooltip="Email Johannes"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-              class="fa fa-envelope"></i><a aria-label="Email Johannes" href="mailto:JKoller2@t-online.de"
-              class="hoverline">JKoller2@t-online.de</a></a>
-        </p>
-        <p>
-          <a aria-label="View Johannes on GitHub" href="https://github.com/jokouno" target="_blank"
-            data-position="top" data-tooltip="View Johannes on GitHub"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i><a
-              aria-label="Johannes on Github" href="https://github.com/jokouno" class="hoverline"
-              target="_blank">github.com/jokouno</a></a>
-        </p>
-        <p>
-          <a aria-label="View Johannes on LinkedIn" href="https://www.linkedin.com/in/johannes-koller-39b015217"
-            target="_blank" data-position="top" data-tooltip="View Johannes on LinkedIn"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-              class="fa fa-linkedin"></i><a aria-label="Johannes on LinkedIn"
-              href="https://www.linkedin.com/in/johannes-koller-39b015217" class="hoverline"
-              target="_blank">https://www.linkedin.com/in/johannes-koller-39b015217</a></a>
-        </p>
+        <div>© 2026 <span class="made">Johannes Koller · Built to <b>learn and grow</b></span></div>
       </div>
-    </section>
+    </footer>
   </main>
 
-  <!-- typed.js -->
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script type="text/javascript">
-    var typed = new Typed('.typing', {
-      strings: ["Tech enthusiast", "Developer", "Fast Learner", "Gamer"],
-      loop: true,
-      typeSpeed: 80,
-      backSpeed: 40
-    });
-  </script>
+  <script>
+    // ---------------------------
+	// Scroll reveal (ignore hero - hero has its own intro)
+	// ---------------------------
+	const revealEls = [...document.querySelectorAll(".reveal")]
+	  .filter(el => !el.closest(".hero"));
 
-  <!-- jQuery-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-          
-  <!-- Materialize - Compiled and minified JavaScript-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script>
-    // Materialize - Initializers
-    $(document).ready(function () {
-      $(".scrollspy").scrollSpy()
-      // Initialize collapse button
-      $(".button-collapse").sideNav({
-        menuWidth: 190, // Default is 240
-        edge: "left", // Choose the horizontal origin
-        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-      })
-    })
-  </script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var elems = document.querySelectorAll('.carousel.carousel-slider');
-      var instances = M.Carousel.init(elems, {
-        fullWidth: true,
-        indicators: true
+	const io = new IntersectionObserver((entries) => {
+	  for (const e of entries) {
+		if (e.isIntersecting) e.target.classList.add("visible");
+	  }
+	}, { threshold: 0.12 });
+
+	revealEls.forEach(el => io.observe(el));
+
+    // ---------------------------
+    // Scroll down helper
+    // ---------------------------
+    const scrollDown = document.getElementById("scrollDown");
+    function jumpNext(){
+      const next = document.getElementById("aboutme") || document.getElementById("experience");
+      if (next) next.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+    if (scrollDown){
+      scrollDown.addEventListener("click", jumpNext);
+      scrollDown.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") { e.preventDefault(); jumpNext(); }
       });
-    });
+    }
+
+    // ---------------------------
+    // Copy email UX
+    // ---------------------------
+    const copyBtn = document.getElementById("copyEmail");
+    const toast = document.getElementById("copyToast");
+    const EMAIL = "JKoller2@t-online.de";
+    if (copyBtn){
+      copyBtn.addEventListener("click", async () => {
+        try{
+          await navigator.clipboard.writeText(EMAIL);
+          toast.style.display = "block";
+          window.clearTimeout(window.__toastT);
+          window.__toastT = window.setTimeout(() => toast.style.display = "none", 1600);
+        }catch{
+          // fallback: open mail client
+          window.location.href = "mailto:" + EMAIL;
+        }
+      });
+    }
+
+    // ---------------------------
+    // Particle canvas (performance-safe)
+    // ---------------------------
+    const canvas = document.getElementById("bgParticles");
+    const ctx = canvas.getContext("2d", { alpha: true });
+
+    let W = 0, H = 0, DPR = Math.min(window.devicePixelRatio || 1, 2);
+    function resize(){
+      W = window.innerWidth;
+      H = window.innerHeight;
+      canvas.width = Math.floor(W * DPR);
+      canvas.height = Math.floor(H * DPR);
+      canvas.style.width = W + "px";
+      canvas.style.height = H + "px";
+      ctx.setTransform(DPR,0,0,DPR,0,0);
+    }
+    window.addEventListener("resize", resize);
+    resize();
+
+    const N = 110;
+    const pts = [];
+    const rnd = (a,b)=>a+Math.random()*(b-a);
+    for (let i=0;i<N;i++){
+      pts.push({
+        x: rnd(0,W),
+        y: rnd(0,H),
+        vx: rnd(-0.14,0.14),
+        vy: rnd(-0.12,0.12),
+        r: rnd(0.8, 2.2),
+        a: rnd(0.08, 0.22)
+      });
+    }
+
+    let t = 0;
+    function frame(){
+      t += 1;
+      ctx.clearRect(0,0,W,H);
+
+      // glow dots
+      for (const p of pts){
+        p.x += p.vx;
+        p.y += p.vy;
+
+        // wrap
+        if (p.x < -20) p.x = W + 20;
+        if (p.x > W + 20) p.x = -20;
+        if (p.y < -20) p.y = H + 20;
+        if (p.y > H + 20) p.y = -20;
+
+        const pulse = 0.62 + 0.38 * Math.sin((t * 0.01) + p.x * 0.002);
+        ctx.beginPath();
+        ctx.fillStyle = `rgba(233,235,239,${p.a * pulse})`;
+        ctx.arc(p.x, p.y, p.r * pulse, 0, Math.PI*2);
+        ctx.fill();
+      }
+
+      // connective lines (subtle)
+      for (let i=0;i<pts.length;i++){
+        for (let j=i+1;j<pts.length;j++){
+          const a = pts[i], b = pts[j];
+          const dx = a.x - b.x;
+          const dy = a.y - b.y;
+          const d2 = dx*dx + dy*dy;
+          const max = 150*150;
+          if (d2 < max){
+            const alpha = (1 - d2/max) * 0.055;
+            ctx.strokeStyle = `rgba(253,238,33,${alpha})`;
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(a.x, a.y);
+            ctx.lineTo(b.x, b.y);
+            ctx.stroke();
+          }
+        }
+      }
+
+      requestAnimationFrame(frame);
+    }
+    frame();
+
+    // ---------------------------
+    // Mild parallax (safe)
+    // ---------------------------
+    let lastY = 0;
+    window.addEventListener("scroll", () => {
+      const y = window.scrollY || 0;
+      if (Math.abs(y - lastY) < 8) return;
+      lastY = y;
+      const shift = Math.min(y / 1200, 0.38);
+      const g = document.querySelector(".ambient-gradient");
+      const v = document.querySelector(".vignette");
+	  const ypx = Math.round(-shift * 28);
+      if (g) g.style.transform = `translate3d(0, ${ypx}px, 0)`;
+      if (v) v.style.opacity = String(0.58 + shift*0.14);
+    }, { passive: true });
+	
+	// ---------------------------
+	// Typing / rotating roles (no dependencies)
+	// ---------------------------
+	const typingEl = document.getElementById("typing");
+
+	const roles = [
+	  "AI Engineer",
+	  "Developer",
+	  "Fast Learner",
+	  "AI Systems Builder",
+	  "Problem Solver"
+	];
+
+	let roleIndex = 0;
+	let charIndex = 0;
+	let deleting = false;
+
+	function tick(){
+	  if (!typingEl) return;
+
+	  const current = roles[roleIndex];
+	  typingEl.textContent = current.slice(0, charIndex);
+
+	  const typeSpeed = 55;
+	  const deleteSpeed = 35;
+	  const holdTime = 900;
+
+	  if (!deleting){
+		if (charIndex < current.length){
+		  charIndex++;
+		  setTimeout(tick, typeSpeed);
+		} else {
+		  deleting = true;
+		  setTimeout(tick, holdTime);
+		}
+	  } else {
+		if (charIndex > 0){
+		  charIndex--;
+		  setTimeout(tick, deleteSpeed);
+		} else {
+		  deleting = false;
+		  roleIndex = (roleIndex + 1) % roles.length;
+		  setTimeout(tick, 220);
+		}
+	  }
+	}
+	tick();
+	
+	// ---------------------------
+	// One-time flash → pulse headline animation
+	// ---------------------------
+	(function(){
+	  const headline = document.querySelector(".hero-headline");
+	  if (!headline) return;
+
+	  // Optional: respect reduced motion
+	  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+	  // Restart animation reliably on reloads
+	  headline.classList.remove("flash-pulse");
+	  void headline.offsetWidth; // force reflow to restart animation
+	  headline.classList.add("flash-pulse");
+
+	  headline.addEventListener("animationend", () => {
+		headline.classList.remove("flash-pulse");
+	  }, { once: true });
+	})();
+	
+	// ---------------------------
+	// Hero intro fly-in on every load
+	// ---------------------------
+	(function(){
+	  const intro = document.getElementById("heroIntro");
+	  if (!intro) return;
+
+	  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+	  // Ensure it runs every load/reload
+	  intro.classList.remove("is-in");
+	  void intro.offsetWidth; // reflow
+	  requestAnimationFrame(() => intro.classList.add("is-in"));
+	})();
+	
+	// ---------------------------
+	// Project mini carousels (no deps)
+	// ---------------------------
+	(function(){
+	  const carousels = document.querySelectorAll("[data-carousel]");
+	  carousels.forEach(c => {
+		const slides = [...c.querySelectorAll(".slide")];
+		if (slides.length <= 1) return;
+
+		let i = slides.findIndex(s => s.classList.contains("is-active"));
+		if (i < 0) i = 0;
+
+		function show(idx){
+		  // pause videos on hide (avoid audio overlap)
+		  slides.forEach((s, k) => {
+			s.classList.toggle("is-active", k === idx);
+			const v = s.querySelector("video");
+			if (v && k !== idx) { try { v.pause(); } catch {} }
+		  });
+		  i = idx;
+		}
+
+		const prevBtn = c.querySelector("[data-prev]");
+		const nextBtn = c.querySelector("[data-next]");
+
+		if (prevBtn) prevBtn.addEventListener("click", () => show((i - 1 + slides.length) % slides.length));
+		if (nextBtn) nextBtn.addEventListener("click", () => show((i + 1) % slides.length));
+
+		show(i);
+	  });
+	})();
+	
+	// -----------------------------------------
+	// Terminal "live typing" (commands + output)
+	// -----------------------------------------
+	(function terminalTypewriter(){
+	  const term = document.getElementById("term");
+	  if (!term) return;
+
+	  // Sammle originale Paare: prompt-line (div mit .cmd) + result (div.result)
+	  const originalNodes = Array.from(term.children);
+
+	  const items = [];
+	  for (let i = 0; i < originalNodes.length; i++) {
+		const node = originalNodes[i];
+		const cmdSpan = node.querySelector?.(".cmd");
+		if (!cmdSpan) continue;
+
+		const cmdText = cmdSpan.textContent ?? "";
+		const resultNode = originalNodes[i + 1];
+		const resultHTML = resultNode?.classList?.contains("result") ? resultNode.innerHTML : "";
+
+		// Prompt-Line HTML ohne Command-Text (wir tippen es neu)
+		const cloned = node.cloneNode(true);
+		const clonedCmd = cloned.querySelector(".cmd");
+		if (clonedCmd) clonedCmd.textContent = ""; // leer, wird getippt
+
+		items.push({
+		  promptLineHTML: cloned.innerHTML,  // enthält prompt + path + leere cmd-span
+		  cmdText,
+		  resultHTML
+		});
+	  }
+
+	  // Terminal leeren
+	  term.innerHTML = "";
+
+	  // Optionen
+	  const TYPE_SPEED = 30;   // ms pro Zeichen
+	  const LINE_GAP   = 300;  // Pause nach fertigem Command
+	  const OUT_GAP    = 600;  // Pause nach Output
+	  const AUTO_SCROLL = true;
+
+	  // Hilfsfunktionen
+	  const sleep = (ms) => new Promise(r => setTimeout(r, ms));
+
+	  function scrollToBottom(){
+		if (!AUTO_SCROLL) return;
+		// terminal-body scrollt; wenn du stattdessen .terminal scrollen willst: term.parentElement
+		term.scrollTop = term.scrollHeight;
+	  }
+
+	  async function typeInto(el, text){
+		// Caret
+		const caret = document.createElement("span");
+		caret.className = "term-caret";
+		caret.textContent = "▌";
+		el.appendChild(caret);
+
+		for (let i = 0; i < text.length; i++) {
+		  // Vor dem Caret ein Zeichen einfügen
+		  caret.insertAdjacentText("beforebegin", text[i]);
+		  scrollToBottom();
+		  await sleep(TYPE_SPEED);
+		}
+
+		// Caret noch kurz lassen, dann entfernen
+		await sleep(120);
+		caret.remove();
+	  }
+
+	  async function play(){
+		for (const item of items) {
+		  // 1) Prompt-Line rendern
+		  const line = document.createElement("div");
+		  line.innerHTML = item.promptLineHTML;
+
+		  // In dem neu eingefügten Line-DOM die .cmd finden
+		  term.appendChild(line);
+		  const cmdEl = line.querySelector(".cmd");
+		  if (!cmdEl) continue;
+
+		  scrollToBottom();
+
+		  // 2) Command tippen
+		  await typeInto(cmdEl, item.cmdText);
+		  await sleep(LINE_GAP);
+
+		  // 3) Output rendern (wenn vorhanden)
+		  if (item.resultHTML && item.resultHTML.trim().length > 0) {
+			const out = document.createElement("div");
+			out.className = "result term-out-appear";
+			out.innerHTML = item.resultHTML;
+			term.appendChild(out);
+			scrollToBottom();
+			await sleep(OUT_GAP);
+		  }
+		}
+	  }
+
+	  // Optional: Nur starten, wenn Section sichtbar wird (IntersectionObserver)
+	  const consoleSection = document.getElementById("console");
+	  if ("IntersectionObserver" in window && consoleSection) {
+		let started = false;
+		const io = new IntersectionObserver((entries) => {
+		  if (started) return;
+		  const e = entries[0];
+		  if (e && e.isIntersecting) {
+			started = true;
+			io.disconnect();
+			play();
+		  }
+		}, { threshold: 0.25 });
+		io.observe(consoleSection);
+	  } else {
+		// Fallback: sofort starten
+		play();
+	  }
+	})();
+
+
+
   </script>
-
-<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2cbaf4a1916c4ba68ae8826acb8cd6fa"}'></script><!-- End Cloudflare Web Analytics -->
-          
 </body>
-
 </html>
