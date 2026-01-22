@@ -1711,6 +1711,26 @@
 	  margin-top: 0;
 	}
 
+	/* Portrait-Video-Wrapper */
+	.video-portrait-wrap{
+	  height: 100%;
+	  width: 100%;
+	
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	
+	  background: #000;
+	}
+	
+	/* Hochkant-Video selbst */
+	.video-portrait{
+	  height: 100%;
+	  width: auto;
+	  max-width: 100%;
+	  object-fit: contain;
+	  aspect-ratio: 9 / 16;
+	}
 
   </style>
 </head>
@@ -2142,9 +2162,9 @@
 
 			<!-- 3) Werewolve mobile app (single video) -->
 			<div class="card reveal project-card">
-			  <div class="project-media">
-				<video class="responsive-video video-portrait" controls>
-				  <source src="/assets/videos/Werwolve_demo.mp4" type="video/mp4">
+			  <div class="video-portrait-wrap">
+				<video class="video-portrait" controls playsinline preload="metadata">
+					<source src="/assets/videos/Werwolve_demo.mp4" type="video/mp4">
 				</video>
 			  </div>
 
