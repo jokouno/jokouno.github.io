@@ -3259,7 +3259,8 @@
     window.addEventListener("resize", resize);
     resize();
 
-    const N = 110;
+    const base = window.innerWidth < 900 ? 60 : 85;
+	const N = base;
     const pts = [];
     const rnd = (a,b)=>a+Math.random()*(b-a);
     for (let i=0;i<N;i++){
@@ -3303,7 +3304,7 @@
           const dx = a.x - b.x;
           const dy = a.y - b.y;
           const d2 = dx*dx + dy*dy;
-          const max = 150*150;
+          const max = 135 * 135;
           if (d2 < max){
             const alpha = (1 - d2/max) * 0.055;
             ctx.strokeStyle = `rgba(253,238,33,${alpha})`;
